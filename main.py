@@ -5,6 +5,7 @@
 
 # from data_control import tra_tu_khoa
 from data_control import lay_tu
+from data_control import tra_tu_khoa
 
 database = lay_tu()
 def find_word(prefix):
@@ -73,9 +74,15 @@ def history(word):
     history_list.append(word)
     return history_list
 
-while True:
-    prefix = input("Input a word or a prefix: ")
-    print(find_word(prefix))    
-    print(history(prefix))
+# while True:
+prefix = input("Input a word or a prefix: ")
+word_found = (find_word(prefix))
+print(word_found)    
+for word in word_found:
+    res = tra_tu_khoa(word,"tu")
+    string = f"{res[0][0]} : {res[0][1]}"
+    print(string)
+
+# print(history(prefix))
     
 

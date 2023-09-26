@@ -73,13 +73,13 @@ for i in range (1,len(word_list)):
     index = find_collision_top(word_list[i])[0]
     row =  find_collision_top(word_list[i])[1]
     col = find_collision_top(word_list[i])[2]
-    print(index, row, col)
+    # print(index, row, col)
     if (crossword.board[row].count("-")>=len(crossword.board)-1):
         alpha = 0
         for j in range (0,len(word_list[i])):
             if crossword.board[row+1][col-index+j].isalpha():
                 alpha+=1
-        print(alpha)
+        # print(alpha)
         if alpha<=len(word_list[i]):
             start.append([word_list[i],row,col,"across"])
             crossword.add_word(word_list[i],"across",row, col-index)
@@ -99,13 +99,13 @@ for i in range (1,len(word_list)):
     row =  find_collision_bottom(word_list[i])[1]
     col = find_collision_bottom(word_list[i])[2]
 
-    print(index, row, col)
+    # print(index, row, col)
     if (crossword.board[row].count("-")>=len(crossword.board)-1):
         alpha = 0
         for j in range (0,len(word_list[i])):
             if crossword.board[row+1][col-index+j].isalpha():
                 alpha+=1
-        print(alpha)
+        # print(alpha)
         if alpha<=len(word_list[i]):
             start.append([word_list[i],row,col,"across"])
             crossword.add_word(word_list[i],"across",row, col-index)
@@ -139,7 +139,8 @@ for i in range (0,len(table)):
 for j in range (0,len(table)):
     table[0][j] = str(number)
     number+=1
-crossword.display()
+# crossword.display()
+
 print(start)
 
 for i in range (0,len(table)):
@@ -148,7 +149,8 @@ for i in range (0,len(table)):
             table[i][j]=" "
 # for i in range (0,len(table)):
 #     print(table[i])
-
+for row in table:
+    print(" ".join(row))
 # print("".join(crossword.board[4][3:3+len("necessary")]))
 
 def guess(answer):

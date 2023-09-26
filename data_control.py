@@ -36,16 +36,20 @@ def them_tu_khoa(tu, nghia, loai):
 def tra_tu_khoa(tu_khoa, tim_theo="tat_ca"):
     if tim_theo == "tu":
         cursor.execute('SELECT tu, nghia FROM tu_vung WHERE tu LIKE ?', ('%' + tu_khoa + '%',))
+        conn.commit()
     elif tim_theo == "nghia":
         cursor.execute('SELECT tu, nghia FROM tu_vung WHERE nghia LIKE ?', ('%' + tu_khoa + '%',))
+        conn.commit()
     elif tim_theo == "loai":
         cursor.execute('SELECT tu, nghia FROM tu_vung WHERE loai_tu LIKE ?', ('%' + tu_khoa + '%',))
+        conn.commit()
     else:
         cursor.execute('SELECT tu, nghia FROM tu_vung WHERE tu LIKE ? OR nghia LIKE ? OR loai_tu LIKE ?',
                        ('%' + tu_khoa + '%', '%' + tu_khoa + '%', '%' + tu_khoa + '%'))
+        conn.commit()
 
     ket_qua = cursor.fetchall()
-    conn.close()
+    # conn.close()
     return ket_qua
 
 def lay_tu():
@@ -72,6 +76,7 @@ def lay_tu():
 
 # Sử dụng hàm này để tra từ theo nhiều kiểu
 
+
 # tu_khoa = input("Nhập từ khóa cần tra: ")
 # tuy_chon_tra = input("Chọn kiểu tra (tu/nghia/loai/tat_ca): ")
 # ket_qua_tra = tra_tu_khoa(tu_khoa, tuy_chon_tra)
@@ -87,3 +92,5 @@ def lay_tu():
 #         print(f'Từ: {tu}, Nghĩa: {nghia}')
 # else:
 #     print("Không tìm thấy từ nào phù hợp.")
+
+# print(tra_tu_khoa("A general practitioner (GP)","tu"))
