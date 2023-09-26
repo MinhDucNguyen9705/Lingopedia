@@ -1,3 +1,5 @@
+from data_control import lay_tu
+
 class Crossword:
     def __init__(self, row, col):
         self.row = row

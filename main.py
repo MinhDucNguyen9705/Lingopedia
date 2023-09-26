@@ -3,6 +3,10 @@
 # import data_control
 # import chat
 
+# from data_control import tra_tu_khoa
+from data_control import lay_tu
+
+database = lay_tu()
 def find_word(prefix):
     response = []
     prefix = prefix.lower()
