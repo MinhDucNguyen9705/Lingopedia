@@ -4,85 +4,86 @@
 # import chat
 
 # from data_control import tra_tu_khoa
-from data_control import lay_tu
-from data_control import tra_tu_khoa
-
-database = lay_tu()
-def find_word(prefix):
-    response = []
-    prefix = prefix.lower()
-    # Prefix = word
-    for word in database:
-        if prefix == word or prefix==word.lower():
-            response.append(word)
-    # Longest common prefix
-    # string_list = []
-    # current=0
-    # while current<len(database):
-    #     string = ""
-    #     prefix_cursor = 0
-    #     temp_prefix = prefix+"1"
-    #     for i in range (0,len(database[word])):
-    #         if database[word][i]==temp_prefix[prefix_cursor]:
-    #             word_cursor = i
-    #             while (database[word][word_cursor]==temp_prefix[prefix_cursor] or database[word][word_cursor]==chr(ord(temp_prefix[prefix_cursor])-32)) and word_cursor<len(database[word])-1 and prefix_cursor<len(temp_prefix)-1:
-    #                 word_cursor+=1
-    #                 prefix_cursor+=1
-    #             string += database[word][i:word_cursor]
-    #     string_list.append(string)
-
-    # Prefix in word
-    for word in database:
-        if prefix[0]==word[0] and prefix in word and len(response)<5 and word not in response:
-            response.append(word)
-    for word in database:
-        if prefix in word and len(response)<5 and word not in response:
-            response.append(word)
-    count_list = []
-    # Number of characters in prefix in each word
-    for word in database:
-        word_char = list(word)
-        characters = list(prefix)
-        i = 0
-        j = 0
-        count = 0
-        while i<len(word_char) and j<len(characters):
-            if word_char[i] == characters[j] or word_char[i] == chr(ord(characters[j])-32):
-                count+=1
-                word_char.pop(i)
-                characters.pop(j)
-            else:
-                i+=1
-            if i==len(word_char) and j<len(characters):
-                i=0
-                j+=1
-        count_list.append(count)
-    min_count = min(count_list)
-    max_count = max(count_list)
-    # print(min_count, max_count)
-    for i in range (max_count, min_count-1,-1):
-        for j in range (0,len(count_list)):
-            if count_list[j]==i and len(response)<5 and database[j] not in response:
-                response.append(database[j])
-    return response
 # print(string_list)
 # print(count_list)
-history_list = []
+# history_list = []
 
-def history(word):
-    global history_list 
-    history_list.append(word)
-    return history_list
+# def history(word):
+#     global history_list 
+#     history_list.append(word)
+#     return history_list
 
 # while True:
-prefix = input("Input a word or a prefix: ")
-word_found = (find_word(prefix))
-print(word_found)    
-for word in word_found:
-    res = tra_tu_khoa(word,"tu")
-    string = f"{res[0][0]} : {res[0][1]}"
-    print(string)
+# prefix = input("Input a word or a prefix: ")
+# word_found = (find_word(prefix))
+# for word in word_found:
+#     res = tra_tu_khoa(word,"tu")
+#     string = f"{res[0][0]} : {res[0][1]}"
+#     print(string)
 
 # print(history(prefix))
+
+from data_control import find_word
+import crossword
+
+status = "greeting"
+count = 0
+# option = ""
+def output(message):
+    global status, count
+    if status=="greeting":
+        status = "option"
+        return "Xin chao. Moi ban lua chon chuc nang tim tu hoac crossword"
+    elif status=="option":
+        if message=="1":
+            status = "look up word"
+            return "Moi nhap tu can tim"
+        elif message=="2":
+            status = "crossword_step1"
+            return "Tro choi bat dau ... "
+        else:
+            return "Moi ban nhap lai lenh"
+    elif status=="look up word":
+        status = "satisfaction_judge"
+        # word_list = [ ]
+        # return chat.word_found(word_list)
+        return "Nhung tu ban can tim nhu sau: ... Ban co hai long voi ket qua ko?"
+    elif status=="satisfaction_judge":
+        if message == "Yes":
+            status = "option"
+            # return chat.back_to_option
+            return "Moi ban chon giua tim tu hoac crossword"
+        elif message == "No":
+            status = "look up word"
+            return "Day la tin nhan khi ma chua thoa man"
+    elif status == "crossword_step1":
+        crossword.create_table()
+        status = "crossword_step2"
+        res = crossword.hint_lookup()
+        traloi = []
+        table = crossword.table_lookup()
+        for line in res:
+            traloi.append(line+"\n")
+        for row in table:
+            traloi.append(row+"\n")
+        return traloi
+    elif status == "crossword_step2":
+        if count<len(res):
+            if crossword.guess(message)!=False:
+                count+=1
+                response = []
+                response.append(f"Ban da tra loi dung, con lai {len(res)-count} tu \n")
+                current = crossword.guess(message)
+                for line in current:
+                    response.append(line + "\n")
+                return response
+            else:
+                return "Moi ban doan lai"
+        else:
+            status = "option"
+            return "Ban da thang, tro choi ket thuc"
+
     
+    
+    # elif status == "crossword":
 
