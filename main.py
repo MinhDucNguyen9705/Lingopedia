@@ -23,51 +23,100 @@
 
 # print(history(prefix))
 
-from data_control import find_word
+from data_control import find_word_1, find_word_2, them_tu_khoa
 import crossword
+
 
 status = "greeting"
 count = 0
+satisfaction = True
+no_count = 0
+word_asked = False
+meaning_asked = False
 # option = ""
 def output(message):
-    global status, count
+    global status, count, satisfaction, no_count, word_asked, meaning_asked
     if status=="greeting":
         status = "option"
-        return "Xin chao. Moi ban lua chon chuc nang tim tu hoac crossword"
+        return f"Xin chao {message}. Moi ban lua chon chuc nang tim tu hoac crossword"
     elif status=="option":
         if message=="1":
             status = "look up word"
             return "Moi nhap tu can tim"
         elif message=="2":
-            status = "crossword_step1"
-            return "Tro choi bat dau ... "
+            status = "crossword"
+            crossword.create_table()
+            # status = "crossword_step2"
+            res = crossword.hint_lookup()
+            traloi = []
+            table = crossword.table_lookup()
+            for line in res:
+                traloi.append(line+"\n")
+            for row in table:
+                traloi.append(row+"\n")
+            return traloi
+            # return "Tro choi bat dau"
         else:
             return "Moi ban nhap lai lenh"
     elif status=="look up word":
         status = "satisfaction_judge"
-        # word_list = [ ]
-        # return chat.word_found(word_list)
-        return "Nhung tu ban can tim nhu sau: ... Ban co hai long voi ket qua ko?"
+        if satisfaction == True:
+            word_list = find_word_1(message)
+            answer = ["Nhung tu ban can tim nhu sau: \n"]
+            for word in word_list:
+                answer.append("{0} : {1}\n".format(word[0][0], word[0][1]))
+            answer.append("Ban co hai long voi ket qua ko? ")
+            return answer
+        else:
+            satisfaction=True
+            word_list = find_word_2(message)
+            answer = ["5 tu gan nhat duoc tim thay: "]
+            for word in word_list:
+                answer.append("{0} : {1}\n".format(word[0][0], word[0][1]))
+            answer.append("Tu ban tim kiem co trong nay ko? ")
+            return answer
     elif status=="satisfaction_judge":
         if message == "Yes":
             status = "option"
+            if no_count>0:
+                no_count-=1
             # return chat.back_to_option
             return "Moi ban chon giua tim tu hoac crossword"
         elif message == "No":
-            status = "look up word"
-            return "Day la tin nhan khi ma chua thoa man"
-    elif status == "crossword_step1":
-        crossword.create_table()
-        status = "crossword_step2"
-        res = crossword.hint_lookup()
-        traloi = []
-        table = crossword.table_lookup()
-        for line in res:
-            traloi.append(line+"\n")
-        for row in table:
-            traloi.append(row+"\n")
-        return traloi
-    elif status == "crossword_step2":
+            if no_count<1:
+                satisfaction = False
+                no_count+=1
+                status = "look up word"
+                return "Hay nhap lai dung tu vua nay ban tim"
+            else:
+                no_count = 0
+                status = "add word"
+                return "Co the tu nay chua co trong tu dien cua chung toi, ban hay giup chung toi them no vao nhe. "
+    elif status == "add word":
+        if word_asked == False and meaning_asked==False:
+            tu = message
+            word_asked==True
+            return "Moi ban nhap nghia"
+        elif word_asked==True and meaning_asked==False:
+            nghia = message
+            return "Moi ban nhap loai tu"
+        elif word_asked==True and meaning_asked==True:
+            status = "option"
+            word_asked=False
+            meaning_asked=False
+            return them_tu_khoa(tu, nghia, message)
+    # elif status == "crossword_step1":
+    #     crossword.create_table()
+    #     status = "crossword_step2"
+    #     res = crossword.hint_lookup()
+    #     traloi = []
+    #     table = crossword.table_lookup()
+    #     for line in res:
+    #         traloi.append(line+"\n")
+    #     for row in table:
+    #         traloi.append(row+"\n")
+    #     return traloi
+    elif status == "crossword":
         if count<len(res):
             if crossword.guess(message)!=False:
                 count+=1
@@ -81,8 +130,7 @@ def output(message):
                 return "Moi ban doan lai"
         else:
             status = "option"
-            return "Ban da thang, tro choi ket thuc"
-
+            return "Ban da thang, tro choi ket thuc. Hay chon lai tinh nang de tiep tuc"
     
     
     # elif status == "crossword":
