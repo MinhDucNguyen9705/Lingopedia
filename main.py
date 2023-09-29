@@ -33,9 +33,12 @@ satisfaction = True
 no_count = 0
 word_asked = False
 meaning_asked = False
+tu = ""
+nghia = ""
+res = ""
 # option = ""
 def output(message):
-    global status, count, satisfaction, no_count, word_asked, meaning_asked
+    global status, count, satisfaction, no_count, word_asked, meaning_asked, tu, nghia, res
     if status=="greeting":
         status = "option"
         return f"Xin chao {message}. Moi ban lua chon chuc nang tim tu hoac crossword"
@@ -53,7 +56,7 @@ def output(message):
             for line in res:
                 traloi.append(line+"\n")
             for row in table:
-                traloi.append(row+"\n")
+                traloi.append(" ".join(row)+"\n")
             return traloi
             # return "Tro choi bat dau"
         else:
@@ -94,11 +97,14 @@ def output(message):
                 return "Co the tu nay chua co trong tu dien cua chung toi, ban hay giup chung toi them no vao nhe. "
     elif status == "add word":
         if word_asked == False and meaning_asked==False:
+            tu = ""
+            nghia = ""
             tu = message
-            word_asked==True
+            word_asked=True
             return "Moi ban nhap nghia"
         elif word_asked==True and meaning_asked==False:
             nghia = message
+            meaning_asked = True
             return "Moi ban nhap loai tu"
         elif word_asked==True and meaning_asked==True:
             status = "option"
@@ -124,7 +130,7 @@ def output(message):
                 response.append(f"Ban da tra loi dung, con lai {len(res)-count} tu \n")
                 current = crossword.guess(message)
                 for line in current:
-                    response.append(line + "\n")
+                    response.append(" ".join(line) + "\n")
                 return response
             else:
                 return "Moi ban doan lai"
@@ -135,3 +141,6 @@ def output(message):
     
     # elif status == "crossword":
 
+# while True:
+#     message = input()
+#     print(output(message))
