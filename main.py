@@ -23,7 +23,7 @@
 
 # print(history(prefix))
 
-from data_control import find_word_1, find_word_2, them_tu_khoa
+from data_control import find_word, answer_1, answer_2, post_word_to_API
 import crossword
 
 
@@ -32,13 +32,14 @@ count = 0
 satisfaction = True
 no_count = 0
 word_asked = False
-meaning_asked = False
 tu = ""
-nghia = ""
 res = ""
 # option = ""
 def output(message):
-    global status, count, satisfaction, no_count, word_asked, meaning_asked, tu, nghia, res
+    global status, count, satisfaction, no_count, word_asked, tu, res
+    if message.lower() == "quit":
+        status = "greeting"
+        return "Xin chao va hen gap lai"
     if status=="greeting":
         status = "option"
         return f"Xin chao {message}. Moi ban lua chon chuc nang tim tu hoac crossword"
@@ -47,24 +48,37 @@ def output(message):
             status = "look up word"
             return "Moi nhap tu can tim"
         elif message=="2":
-            status = "crossword"
-            crossword.create_table()
-            # status = "crossword_step2"
-            res = crossword.hint_lookup()
-            traloi = []
-            table = crossword.table_lookup()
-            for line in res:
-                traloi.append(line+"\n")
-            for row in table:
-                traloi.append(" ".join(row)+"\n")
-            return traloi
+            try:
+                status = "crossword"
+                crossword.create_table()
+                # status = "crossword_step2"
+                res = crossword.hint_lookup()
+                traloi = []
+                table = crossword.table_lookup()
+                for line in res:
+                    traloi.append(line+"\n")
+                for row in table:
+                    traloi.append(" ".join(row)+"\n")
+                return traloi
+            except IndexError:
+                status = "crossword"
+                crossword.create_table()
+                # status = "crossword_step2"
+                res = crossword.hint_lookup()
+                traloi = []
+                table = crossword.table_lookup()
+                for line in res:
+                    traloi.append(line+"\n")
+                for row in table:
+                    traloi.append(" ".join(row)+"\n")
+                return traloi
             # return "Tro choi bat dau"
         else:
             return "Moi ban nhap lai lenh"
     elif status=="look up word":
         status = "satisfaction_judge"
         if satisfaction == True:
-            word_list = find_word_1(message)
+            word_list = answer_1(message)
             answer = ["Nhung tu ban can tim nhu sau: \n"]
             for word in word_list:
                 answer.append("{0} : {1}\n".format(word[0][0], word[0][1]))
@@ -72,7 +86,7 @@ def output(message):
             return answer
         else:
             satisfaction=True
-            word_list = find_word_2(message)
+            word_list = answer_2(message)
             answer = ["5 tu gan nhat duoc tim thay: "]
             for word in word_list:
                 answer.append("{0} : {1}\n".format(word[0][0], word[0][1]))
@@ -94,23 +108,17 @@ def output(message):
             else:
                 no_count = 0
                 status = "add word"
-                return "Co the tu nay chua co trong tu dien cua chung toi, ban hay giup chung toi them no vao nhe. "
+                return "Co the tu nay chua co trong tu dien cua chung toi, ban hay giup chung toi them no vao nhe. Moi nhap tu "
     elif status == "add word":
-        if word_asked == False and meaning_asked==False:
+        if word_asked == False:
             tu = ""
-            nghia = ""
             tu = message
             word_asked=True
             return "Moi ban nhap nghia"
-        elif word_asked==True and meaning_asked==False:
-            nghia = message
-            meaning_asked = True
-            return "Moi ban nhap loai tu"
-        elif word_asked==True and meaning_asked==True:
-            status = "option"
+        elif word_asked==True:
             word_asked=False
-            meaning_asked=False
-            return them_tu_khoa(tu, nghia, message)
+            status = "option"
+            return post_word_to_API(tu, message)
     # elif status == "crossword_step1":
     #     crossword.create_table()
     #     status = "crossword_step2"
@@ -141,6 +149,6 @@ def output(message):
     
     # elif status == "crossword":
 
-# while True:
-#     message = input()
-#     print(output(message))
+while True:
+    message = input()
+    print(output(message))

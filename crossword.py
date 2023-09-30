@@ -1,5 +1,4 @@
-from data_control import lay_tu
-from data_control import tra_tu_khoa
+from data_control import API_connect, meaning_get_from_API
 import random
 
 class Crossword:
@@ -69,7 +68,7 @@ start = []
 def create_table():
     global table,start
     start = []
-    database = lay_tu()
+    database = API_connect()
     lst = []
     for i in range (len(database)):
         if all(database[i][j].isalpha() for j in range (0,len(database[i]))):
@@ -195,7 +194,7 @@ def guess(answer):
 def hint_lookup():
     res = []
     for i in range (0,len(start)):
-        res.append(f"{start[i][1],start[i][2]}, {start[i][3]}: {tra_tu_khoa(start[i][0],'tu')[0][1]}")
+        res.append(f"{start[i][1],start[i][2]}, {start[i][3]}: {meaning_get_from_API(start[i][0])[0][1]}")
     return res
 
 def table_lookup():
