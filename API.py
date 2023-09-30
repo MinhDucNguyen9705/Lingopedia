@@ -18,7 +18,7 @@ def word_query(prefix : Union[str, None]=None):
             return word
 
 @app.post("/lingopedia/")
-def add_word(word, meaning):
+def add_word(word : str, meaning : str):
     meaning_list.append([[word, meaning]])
 
 @app.get("/all_words/")

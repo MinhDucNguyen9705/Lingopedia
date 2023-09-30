@@ -153,6 +153,6 @@ def answer_2(prefix):
 
 # print(tra_tu_khoa("A general practitioner (GP)","tu"))
 
-prefix = input("Input a prefix ")
-print(answer_1(prefix))
-print(answer_2(prefix))
+# prefix = input("Input a prefix ")
+# print(answer_1(prefix))
+# print(answer_2(prefix))

@@ -144,11 +144,12 @@ def output(message):
                 return "Moi ban doan lai"
         else:
             status = "option"
+            count = 0
             return "Ban da thang, tro choi ket thuc. Hay chon lai tinh nang de tiep tuc"
     
     
     # elif status == "crossword":
 
-while True:
-    message = input()
-    print(output(message))
+# while True:
+#     message = input()
+#     print(output(message))
