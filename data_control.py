@@ -4,28 +4,39 @@
 
 
 import json
-# from xclass_sdk import request
+from xclass_sdk import request
 import requests
 import asyncio
 
-import sqlite3
-import pandas as pd
-
-def API_connect():
+async def API_connect():
     url = "http://127.0.0.1:8000"
-    database = requests.get(f"{url}/all_words/")
-    data = json.loads(database.text)
+    database = await request(f"{url}/all_words/")
+    data = await database.json()
     return data
 
-def meaning_get_from_API(word):
+async def meaning_get_from_API(word):
     url = "http://127.0.0.1:8000"
-    database = requests.get(f"{url}/lingopedia/{word}")
-    data = json.loads(database.text)
+    database = await request(f"{url}/find_word/{word}")
+    data = await database.json()
     return data
+
+# def API_connect():
+#     url = "http://127.0.0.1:8000"
+#     database = requests.get(f"{url}/all_words/")
+#     data = json.loads(database.text)
+#     return data
+
+# # print(API_connect())
+
+# def meaning_get_from_API(word):
+#     url = "http://127.0.0.1:8000"
+#     database = requests.get(f"{url}/find_word/{word}")
+#     data = json.loads(database.text)
+#     return data
 
 def post_word_to_API(word, meaning):
     url = "http://127.0.0.1:8000"
-    response = requests.post(f"{url}/lingopedia/", json = [[word,meaning]])
+    response = requests.post(f"{url}/create_word/", json = [[word,meaning]])
     return "Them thanh cong"
 # print(API_connect())
 # print(meaning_get_from_API("Consultant"))
@@ -53,13 +64,12 @@ def find_word(prefix):
     #                 prefix_cursor+=1
     #             string += database[word][i:word_cursor]
     #     string_list.append(string)
-
     # Prefix in word
     for word in database:
-        if prefix[0]==word[0] and prefix in word and len(response)<5 and word not in response:
+        if (prefix[0]==word[0] or prefix[0]==word[0].lower()) and (prefix in word or prefix in word.lower())  and len(response)<5 and word not in response:
             response.append(word)
     for word in database:
-        if prefix in word and len(response)<5 and word not in response:
+        if (prefix in word or prefix in word.lower()) and len(response)<5 and word not in response:
             response.append(word)
     count_list = []
     # Number of characters in prefix in each word

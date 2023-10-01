@@ -61,4 +61,4 @@ def lay_tu():
         lst.append(list_of_words[i][0])
     return lst
 
-print(lay_tu())
+# print(lay_tu())

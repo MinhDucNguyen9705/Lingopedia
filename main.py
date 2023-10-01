@@ -81,7 +81,7 @@ def output(message):
             word_list = answer_1(message)
             answer = ["Nhung tu ban can tim nhu sau: \n"]
             for word in word_list:
-                answer.append("{0} : {1}\n".format(word[0][0], word[0][1]))
+                answer.append("{0} : {1}\n".format(word[0], word[1]))
             answer.append("Ban co hai long voi ket qua ko? ")
             return answer
         else:
@@ -89,7 +89,7 @@ def output(message):
             word_list = answer_2(message)
             answer = ["5 tu gan nhat duoc tim thay: "]
             for word in word_list:
-                answer.append("{0} : {1}\n".format(word[0][0], word[0][1]))
+                answer.append("{0} : {1}\n".format(word[0], word[1]))
             answer.append("Tu ban tim kiem co trong nay ko? ")
             return answer
     elif status=="satisfaction_judge":
@@ -150,6 +150,6 @@ def output(message):
     
     # elif status == "crossword":
 
-# while True:
-#     message = input()
-#     print(output(message))
+while True:
+    message = input()
+    print(output(message))

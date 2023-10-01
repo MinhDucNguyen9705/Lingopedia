@@ -75,7 +75,7 @@ def create_table():
             lst.append(database[i])
     random.shuffle(lst)
     word_list = lst[:15]
-
+    # print(word_list)
     word_list.sort(key=len,reverse=True)
 
     crossword.add_word(word_list[0],"down",3,3)
@@ -92,7 +92,7 @@ def create_table():
                     alpha+=1
             # print(alpha)
             if alpha<=len(word_list[i]):
-                start.append([word_list[i],row,col,"across"])
+                start.append([word_list[i],row,col,"ngang"])
                 crossword.add_word(word_list[i],"across",row, col-index)
                 continue
         else:
@@ -101,7 +101,7 @@ def create_table():
                 if crossword.board[row+j][col].isalpha():
                     count+=1
             if count<=1 and crossword.board[row-1][col]=="-":
-                start.append([word_list[i],row,col,"down"])
+                start.append([word_list[i],row,col,"dọc"])
                 crossword.add_word(word_list[i],"down",row-index,col)
                 continue
         
@@ -118,7 +118,7 @@ def create_table():
                     alpha+=1
             # print(alpha)
             if alpha<=len(word_list[i]):
-                start.append([word_list[i],row,col,"across"])
+                start.append([word_list[i],row,col,"ngang"])
                 crossword.add_word(word_list[i],"across",row, col-index)
                 continue
         else:
@@ -127,7 +127,7 @@ def create_table():
                 if crossword.board[row+j][col].isalpha():
                     count+=1
             if count<=1 and crossword.board[row-1][col]=="-":
-                start.append([word_list[i],row,col,"down"])
+                start.append([word_list[i],row,col,"dọc"])
                 crossword.add_word(word_list[i],"down",row-index,col)
                 continue
     for i in range (0,len(crossword.board)):
@@ -193,8 +193,9 @@ def guess(answer):
     
 def hint_lookup():
     res = []
+    global start
     for i in range (0,len(start)):
-        res.append(f"{start[i][1],start[i][2]}, {start[i][3]}: {meaning_get_from_API(start[i][0])[0][1]}")
+        res.append(f"{start[i][1],start[i][2]}, {start[i][3]}: {meaning_get_from_API(start[i][0])[1]}")
     return res
 
 def table_lookup():
@@ -209,8 +210,9 @@ def table_lookup():
 # while True:
 #     res = input("Guess a word ")
 #     print(guess(res))
-    # for row in table:
-    #     print(" ".join(row))
+#     print(table_lookup())
+#     for row in table:
+#         print(" ".join(row))
 # print(find_collision_down("internet"))
 # crossword.add_word("internet","across",2,3)
 # crossword.add_word("evidence","down",2,3+3)
