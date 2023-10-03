@@ -1,5 +1,6 @@
 from data_control import API_connect, meaning_get_from_API
 import random
+import asyncio
 
 class Crossword:
     def __init__(self, row, col):
@@ -65,10 +66,12 @@ def find_collision_bottom(word):
 # crossword.add_word(word_list[2],"across",row-index, col)
 table = []
 start = []
-def create_table():
+history = ""
+
+async def create_table():
     global table,start
     start = []
-    database = API_connect()
+    database = await API_connect()
     lst = []
     for i in range (len(database)):
         if all(database[i][j].isalpha() for j in range (0,len(database[i]))):
@@ -163,8 +166,11 @@ def create_table():
 # print("".join(crossword.board[4][3:3+len("necessary")]))
 
 def guess(answer):
-    global table
+    global table, history
     right = False
+    if len(answer)<=2:
+        return False
+    history+=answer
     for i in range (0,len(crossword.board)):
         for j in range (0,len(crossword.board[0])-len(answer)):
             if "".join(crossword.board[i][j:j+len(answer)])==answer:
@@ -191,11 +197,16 @@ def guess(answer):
     else:
         return False
     
-def hint_lookup():
+def clear_history():
+    global history
+    history = ""
+    return history
+
+async def hint_lookup():
     res = []
     global start
     for i in range (0,len(start)):
-        res.append(f"{start[i][1],start[i][2]}, {start[i][3]}: {meaning_get_from_API(start[i][0])[1]}")
+        res.append(f"{start[i][1],start[i][2]}, {start[i][3]}: {await meaning_get_from_API(start[i][0])[1]}")
     return res
 
 def table_lookup():

@@ -1,8 +1,19 @@
 from typing import Union
 from fastapi import FastAPI
 from database import create_word, find_word, take_all_word
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
+origins = ["*"]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 word_list = [word for word in take_all_word()]
 # meaning_list = [find_word(word) for word in take_all_word()]

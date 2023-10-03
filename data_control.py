@@ -5,7 +5,7 @@
 
 import json
 from xclass_sdk import request
-import requests
+# import requests
 import asyncio
 
 async def API_connect():
@@ -26,7 +26,7 @@ async def meaning_get_from_API(word):
 #     data = json.loads(database.text)
 #     return data
 
-# # print(API_connect())
+# print(API_connect())
 
 # def meaning_get_from_API(word):
 #     url = "http://127.0.0.1:8000"
@@ -38,11 +38,13 @@ def post_word_to_API(word, meaning):
     url = "http://127.0.0.1:8000"
     response = requests.post(f"{url}/create_word/", json = [[word,meaning]])
     return "Them thanh cong"
+
 # print(API_connect())
 # print(meaning_get_from_API("Consultant"))
 
-def find_word(prefix):
-    database = API_connect()
+async def find_word(prefix):
+    # print("Hello")
+    database = await API_connect()
     response = []
     prefix = prefix.lower()
     # Prefix = word
@@ -101,13 +103,13 @@ def find_word(prefix):
 
 answer = []
 
-def answer_1(prefix):
+async def answer_1(prefix):
     global answer
-    response = find_word(prefix)
+    response = await find_word(prefix)
     answer = []
     for word in response:
-        if meaning_get_from_API(word)!= {'detail': 'Not Found'} and meaning_get_from_API(word)!=None:
-            answer.append(meaning_get_from_API(word))
+        if await meaning_get_from_API(word)!= {'detail': 'Not Found'} and await meaning_get_from_API(word)!=None:
+            answer.append(await meaning_get_from_API(word))
         else:
             continue
         if len(answer)>=5:
@@ -115,13 +117,13 @@ def answer_1(prefix):
     return answer
 
 
-def answer_2(prefix):
+async def answer_2(prefix):
     global answer
-    response = find_word(prefix)
+    response = await find_word(prefix)
     ans = []
     for word in response:
-        if meaning_get_from_API(word)!= {'detail': 'Not Found'} and len(ans)<5 and meaning_get_from_API(word) not in answer and meaning_get_from_API(word)!=None:
-            ans.append(meaning_get_from_API(word))
+        if await meaning_get_from_API(word)!= {'detail': 'Not Found'} and len(ans)<5 and await meaning_get_from_API(word) not in answer and await meaning_get_from_API(word)!=None:
+            ans.append(await meaning_get_from_API(word))
         else:
             continue
         if len(ans)>=5:

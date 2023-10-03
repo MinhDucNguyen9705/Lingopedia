@@ -82,5 +82,5 @@ def take_all_word():
     return lst
 
 # print(csv_read("data.csv"))
-print(find_word("allergen"))
+# print(find_word("allergen"))
 # print(take_all_word())

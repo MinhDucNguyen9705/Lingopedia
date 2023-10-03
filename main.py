@@ -25,7 +25,7 @@
 
 from data_control import find_word, answer_1, answer_2, post_word_to_API
 import crossword
-
+import asyncio
 
 status = "greeting"
 count = 0
@@ -35,7 +35,8 @@ word_asked = False
 tu = ""
 res = ""
 # option = ""
-def output(message):
+
+async def output(message):
     global status, count, satisfaction, no_count, word_asked, tu, res
     if message.lower() == "quit":
         status = "greeting"
@@ -50,7 +51,7 @@ def output(message):
         elif message=="2":
             try:
                 status = "crossword"
-                crossword.create_table()
+                await crossword.create_table()
                 # status = "crossword_step2"
                 res = crossword.hint_lookup()
                 traloi = []
@@ -62,7 +63,7 @@ def output(message):
                 return traloi
             except IndexError:
                 status = "crossword"
-                crossword.create_table()
+                await crossword.create_table()
                 # status = "crossword_step2"
                 res = crossword.hint_lookup()
                 traloi = []
@@ -78,7 +79,7 @@ def output(message):
     elif status=="look up word":
         status = "satisfaction_judge"
         if satisfaction == True:
-            word_list = answer_1(message)
+            word_list = await answer_1(message)
             answer = ["Nhung tu ban can tim nhu sau: \n"]
             for word in word_list:
                 answer.append("{0} : {1}\n".format(word[0], word[1]))
@@ -86,7 +87,7 @@ def output(message):
             return answer
         else:
             satisfaction=True
-            word_list = answer_2(message)
+            word_list = await answer_2(message)
             answer = ["5 tu gan nhat duoc tim thay: "]
             for word in word_list:
                 answer.append("{0} : {1}\n".format(word[0], word[1]))
@@ -145,11 +146,12 @@ def output(message):
         else:
             status = "option"
             count = 0
+            crossword.clear_history()
             return "Ban da thang, tro choi ket thuc. Hay chon lai tinh nang de tiep tuc"
-    
+
     
     # elif status == "crossword":
 
-while True:
-    message = input()
-    print(output(message))
+# while True:
+#     message = input()
+#     print(output(message))
