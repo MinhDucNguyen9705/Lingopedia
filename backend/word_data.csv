@@ -150,7 +150,7 @@ Machine learning engineer, Kỹ sư học máy,công nghệ thông tin
 UX researcher, Nghiên cứu viên trải nghiệm người dùng,công nghệ thông tin
 QA engineer (Quality Assurance), Kỹ sư đảm bảo chất lượng,công nghệ thông tin
 Data administrator, Quản trị dữ liệu,công nghệ thông tin
-VR;AR developer, Nhà phát triển thực tế ảo / Tăng cường thực tế,công nghệ thông tin
+VR;AR developer, Nhà phát triển thực tế ảo ; Tăng cường thực tế,công nghệ thông tin
 Embedded systems designer, Thiết kế hệ thống nhúng,công nghệ thông tin
 IT procurement specialist, Chuyên gia mua sắm công nghệ thông tin,công nghệ thông tin
 IT business analyst, Nhà phân tích kinh doanh công nghệ thông tin,công nghệ thông tin
@@ -536,7 +536,7 @@ Conduction, Dẫn điện,vật lý
 Insulation, Cách điện,vật lý
 Semiconductor Devices, Thiết bị bán dẫn,vật lý
 Circuit Analysis, Phân tích mạch,vật lý
-Ohm's Law, Định luật Ohm,vật lý
+Law of Ohm, Định luật Ohm,vật lý
 Electric Field, Trường điện,vật lý
 Magnetic Field, Trường từ,vật lý
 Alternating Current (AC), Dòng điện xoay chiều,vật lý
@@ -548,7 +548,7 @@ Silicon, Silic,vật lý
 Printed Wiring Board (PWB), Bo mạch in,vật lý
 Electronic Component, Linh kiện điện tử,vật lý
 Electrical Resistance, Kháng điện,vật lý
-Joule's Law, Định luật Joule,vật lý
+Law of Joule, Định luật Joule,vật lý
 Electron, Electron,vật lý
 Proton, Proton,vật lý
 Neutron, Neutron,vật lý
@@ -733,7 +733,7 @@ Bread, Bánh mì,ẩm thực
 Pasta, Mì ống,ẩm thực
 Rice, Gạo,ẩm thực
 Meat, Thịt,ẩm thực
-Poultry, gia cầm,ẩm thực
+Poultry, Gia cầm,ẩm thực
 Seafood, Hải sản,ẩm thực
 Vegetables, Rau cải,ẩm thực
 Fruits, Trái cây,ẩm thực
@@ -1048,802 +1048,802 @@ Abstract Expressionism, Chủ nghĩa trừu tượng biểu cảm,nghệ thuật
 Artistic Inspiration, Sự truyền cảm hứng nghệ thuật,nghệ thuật
 Art Collector, Người sưu tập nghệ thuật,nghệ thuật
 Artistic Process, Quy trình nghệ thuật,nghệ thuật
-Athlete, Vận động viên,thể thao 
-Sports, Thể thao,thể thao 
-Competition, Cuộc thi,thể thao 
-Team, Đội,thể thao 
-Game, Trò chơi,thể thao 
-Victory, Chiến thắng,thể thao 
-Defeat, Thất bại,thể thao 
-Tournament, Giải đấu,thể thao 
-Championship, Chức vô địch,thể thao 
-Match, Trận đấu,thể thao 
-Score, Điểm số,thể thao 
-Referee, Trọng tài,thể thao 
-Coach, HLV,thể thao 
-Training, Huấn luyện,thể thao 
-Player, Cầu thủ,thể thao 
-Uniform, Đồng phục,thể thao 
-Field, Sân cỏ,thể thao 
-Court, Sân thi đấu,thể thao 
-Stadium, Sân vận động,thể thao 
-Equipment, Thiết bị,thể thao 
-Ball, Bóng,thể thao 
-Racket, Vợt,thể thao 
-Net, Mạng,thể thao 
-Goal, Bàn thắng,thể thao 
-Athlete's Village, Làng vận động viên,thể thao 
-Medal, Huy chương,thể thao 
-Ceremony, Lễ trao giải,thể thao 
-Trophy, Cúp thưởng,thể thao 
-Record, Kỷ lục,thể thao 
-Relay, Đua tiếp sức,thể thao 
-Marathon, Giải chạy marathon,thể thao 
-Sprint, Chạy nhanh,thể thao 
-Endurance, Sức bền,thể thao 
-Gymnastics, Tập thể dục,thể thao 
-Swimming, Bơi lội,thể thao 
-Diving, Nhảy từ trampoline,thể thao 
-Cycling, Đua xe đạp,thể thao 
-Boxing, Đánh quyền,thể thao 
-Wrestling, Đấm bốc,thể thao 
-Judo, Judo,thể thao 
-Karate, Karate,thể thao 
-Taekwondo, Taekwondo,thể thao 
-Weightlifting, Cử tạ,thể thao 
-Archery, Bắn cung,thể thao 
-Equestrian, Đua ngựa,thể thao 
-Rowing, Chèo thuyền,thể thao 
-Sailing, Lướt ván,thể thao 
-Skiing, Trượt tuyết,thể thao 
-Snowboarding, Lướt ván trên tuyết,thể thao 
-Ice Hockey, Khúc côn cầu trên băng,thể thao 
-Figure Skating, Trượt băng nghệ thuật,thể thao 
-Gymnast, Vận động viên thể dục dụng cụ,thể thao 
-Swimmer, Vận động viên bơi lội,thể thao 
-Diver, Vận động viên nhảy từ trampoline,thể thao 
-Cyclist, Vận động viên đua xe đạp,thể thao 
-Boxer, Vận động viên đánh quyền,thể thao 
-Wrestler, Vận động viên đấm bốc,thể thao 
-Judoka, Vận động viên Judo,thể thao 
-Karateka, Vận động viên Karate,thể thao 
-Taekwondoka, Vận động viên Taekwondo,thể thao 
-Weightlifter, Vận động viên cử tạ,thể thao 
-Archer, Vận động viên bắn cung,thể thao 
-Equestrian, Vận động viên đua ngựa,thể thao 
-Rower, Vận động viên chèo thuyền,thể thao 
-Sailor, Vận động viên lướt ván,thể thao 
-Skier, Vận động viên trượt tuyết,thể thao 
-Snowboarder, Vận động viên lướt ván trên tuyết,thể thao 
-Ice Hockey Player, Cầu thủ khúc côn cầu trên băng,thể thao 
-Figure Skater, Vận động viên trượt băng nghệ thuật,thể thao 
-Sportsmanship, Tinh thần thể thao,thể thao 
-Fair Play, Chơi trong tinh thần thể thao,thể thao 
-Sports Venue, Địa điểm thi đấu,thể thao 
-Fan, Cổ động viên,thể thao 
-Spectator, Người xem,thể thao 
-Cheer, Cổ vũ,thể thao 
-Athlete's Oath, Lời tuyên thệ của vận động viên,thể thao 
-Sportsmanship, Tinh thần thể thao,thể thao 
-Medal Ceremony, Lễ trao giải,thể thao 
-Opening Ceremony, Lễ khai mạc,thể thao 
-Closing Ceremony, Lễ bế mạc,thể thao 
-National Anthem, Quốc ca,thể thao 
-Olympic Games, Thế vận hội,thể thao 
-Paralympics, Thế vận hội dành cho người khuyết tật,thể thao 
-World Cup, World Cup,thể thao 
-League, Giải đấu,thể thao 
-Tournament, Giải đấu,thể thao 
-Qualification, Vòng loại,thể thao 
-Knockout, Đấu loại trực tiếp,thể thao 
-Tie, Trận hòa,thể thao 
-Victory, Chiến thắng,thể thao 
-Defeat, Thất bại,thể thao 
-Gold Medal, Huy chương vàng,thể thao 
-Silver Medal, Huy chương bạc,thể thao 
-Bronze Medal, Huy chương đồng,thể thao 
-Sports Equipment, Thiết bị thể thao,thể thao 
-Sports Psychology, Tâm lý học thể thao,thể thao 
-Sports Nutrition, Dinh dưỡng thể thao,thể thao 
-Sports Medicine, Y học thể thao,thể thao 
-Sports Injury, Chấn thương thể thao,thể thao 
-Sports Science, Khoa học thể thao,thể thao 
-Fashion, Thời trang,thời trang 
-Clothing, Quần áo,thời trang 
-Apparel, Đồ trang phục,thời trang 
-Designer, Nhà thiết kế,thời trang 
-Style, Phong cách,thời trang 
-Trend, Xu hướng,thời trang 
-Outfit, Bộ trang phục,thời trang 
-Accessories, Phụ kiện,thời trang 
-Couture, Thời trang cao cấp,thời trang 
-Runway, Sàn diễn thời trang,thời trang 
-Model, Người mẫu,thời trang 
-Catwalk, Nơi người mẫu trình diễn,thời trang 
-Fabric, Vải,thời trang 
-Texture, Đặc tính bề mặt,thời trang 
-Sewing, May vá,thời trang 
-Tailor, Thợ may,thời trang 
-Dress, Váy,thời trang 
-Suit, Áo vest,thời trang 
-Shirt, Áo sơ mi,thời trang 
-Pants, Quần,thời trang 
-Skirt, Váy ngắn,thời trang 
-Blouse, Áo blouse,thời trang 
-Jacket, Áo khoác,thời trang 
-Coat, Áo khoác dày,thời trang 
-Sweater, Áo len,thời trang 
-Scarf, Khăn quàng cổ,thời trang 
-Hat, Mũ,thời trang 
-Shoes, Giày,thời trang 
-Boots, Giày bốt,thời trang 
-Sandals, Dép xỏ ngón,thời trang 
-High Heels, Giày cao gót,thời trang 
-Sneakers, Giày thể thao,thời trang 
-Handbag, Túi xách,thời trang 
-Clutch, Túi cầm tay,thời trang 
-Belt, Thắt lưng,thời trang 
-Jewelry, Trang sức,thời trang 
-Necklace, Dây chuyền,thời trang 
-Earrings, Bông tai,thời trang 
-Bracelet, Vòng cổ tay,thời trang 
-Ring, Nhẫn,thời trang 
-Sunglasses, Kính râm,thời trang 
-Watch, Đồng hồ,thời trang 
-Lingerie, Đồ lót,thời trang 
-Swimsuit, Áo tắm,thời trang 
-Formal Wear, Trang phục dự tiệc,thời trang 
-Casual Wear, Trang phục thường ngày,thời trang 
-Vintage, Thời trang cổ điển,thời trang 
-Bohemian, Phong cách Bohemian,thời trang 
-Streetwear, Thời trang đường phố,thời trang 
-Sportswear, Thời trang thể thao,thời trang 
-Haute Couture, Thời trang cao cấp,thời trang 
-Ready-to-Wear, Trang phục sẵn sàng mặc,thời trang 
-Fashion Show, Buổi trình diễn thời trang,thời trang 
-Fashion Week, Tuần lễ thời trang,thời trang 
-Haute Couture, Thời trang cao cấp,thời trang 
-Fashion Industry, Ngành công nghiệp thời trang,thời trang 
-Fashion Designer, Nhà thiết kế thời trang,thời trang 
-Runway Model, Người mẫu trên sàn diễn,thời trang 
-Dressmaker, Người làm váy,thời trang 
-Textile, Ngành dệt may,thời trang 
-Fabric Store, Cửa hàng vải,thời trang 
-Color, Màu sắc,thời trang 
-Pattern, Hoa văn,thời trang 
-Sewing Machine, Máy may,thời trang 
-Dress Form, Bản định hình,thời trang 
-Fitting, Thử đồ,thời trang 
-Tailoring, Thuộc về thời trang,thời trang 
-Fashion Retail, Bán lẻ thời trang,thời trang 
-Style Icon, Người thần tượng phong cách,thời trang 
-Wardrobe, Tủ quần áo,thời trang 
-Make-up, Trang điểm,thời trang 
-Hairstyle, Kiểu tóc,thời trang 
-Beauty, Sắc đẹp,thời trang 
-Fashion Magazine, Tạp chí thời trang,thời trang 
-Fashion Blog, Blog thời trang,thời trang 
-Fashion Photographer, Nhiếp ảnh gia thời trang,thời trang 
-Runway Show, Buổi trình diễn sàn diễn,thời trang 
-Fashion Week, Tuần lễ thời trang,thời trang 
-Fashion Trend, Xu hướng thời trang,thời trang 
-Fashion Statement, Tuyên bố thời trang,thời trang 
-Dress Code, Quy định trang phục,thời trang 
-Red Carpet, Thảm đỏ,thời trang 
-Fashion Sketch, Bản phác thảo thời trang,thời trang 
-Fashion Accessories, Phụ kiện thời trang,thời trang 
-Street Style, Phong cách đường phố,thời trang 
-Fashion Boutique, Cửa hàng thời trang,thời trang 
-Fashion Runway, Sàn diễn thời trang,thời trang 
-Fashion Industry, Ngành công nghiệp thời trang,thời trang 
-Fashion Label, Nhãn hiệu thời trang,thời trang 
-Couturier, Thợ may thời trang cao cấp,thời trang 
-Fashion Brand, Thương hiệu thời trang,thời trang 
-Fashion Model, Người mẫu thời trang,thời trang 
-Fashionista, Người yêu thời trang,thời trang 
-Fashion Blog, Blog thời trang,thời trang 
-Fashion Consultant, Chuyên gia thời trang,thời trang 
-Fashion PR, Quảng cáo thời trang,thời trang 
-Fashion Designer, Nhà thiết kế thời trang,thời trang 
-Fashion Stylist, Chuyên gia trang điểm thời trang,thời trang 
-Fashion Marketing, Tiếp thị thời trang,thời trang 
-Fashion Journalism, Báo chí thời trang,thời trang 
-Red, Đỏ,màu sắc 
-Blue, Xanh dương,màu sắc 
-Green, Xanh lá cây,màu sắc 
-Yellow, Vàng,màu sắc 
-Orange, Cam,màu sắc 
-Purple, Tím,màu sắc 
-Pink, Hồng,màu sắc 
-Brown, Nâu,màu sắc 
-Gray, Xám,màu sắc 
-Black, Đen,màu sắc 
-White, Trắng,màu sắc 
-Beige, Màu be,màu sắc 
-Turquoise, Màu ngọc lục bảo,màu sắc 
-Gold, Vàng,màu sắc 
-Silver, Bạc,màu sắc 
-Bronze, Đồng,màu sắc 
-Maroon, Màu đỏ rượu vang,màu sắc 
-Teal, Màu xanh dương mòng két,màu sắc 
-Lavender, Màu oải hương,màu sắc 
-Indigo, Màu xanh nước biển,màu sắc 
-Magenta, Màu hồng đậm,màu sắc 
-Charcoal, Màu than củi,màu sắc 
-Coral, Màu san hô,màu sắc 
-Peach, Màu đào,màu sắc 
-Lavender, Màu oải hương,màu sắc 
-Tangerine, Màu cam chanh,màu sắc 
-Lime, Màu xanh chanh,màu sắc 
-Khaki, Màu mỡ,màu sắc 
-Plum, Màu mận,màu sắc 
-Sky Blue, Màu xanh da trời,màu sắc 
-Forest Green, Màu xanh rừng,màu sắc 
-Olive, Màu xanh olive,màu sắc 
-Salmon, Màu salmon,màu sắc 
-Mauve, Màu hồng lục,màu sắc 
-Burgundy, Màu đỏ cói,màu sắc 
-Cyan, Màu xanh lam đậm,màu sắc 
-Ivory, Màu ngà,màu sắc 
-Turquoise, Màu ngọc lục bảo,màu sắc 
-Aquamarine, Màu ngọc lam,màu sắc 
-Rust, Màu rỉ sét,màu sắc 
-Slate, Màu xám đá,màu sắc 
-Chartreuse, Màu chartreuse,màu sắc 
-Fuchsia, Màu đỏ hồng,màu sắc 
-Periwinkle, Màu xanh da trời hồng,màu sắc 
-Lilac, Màu cẩm thạch,màu sắc 
-Cream, Màu kem,màu sắc 
-Sienna, Màu sienna,màu sắc 
-Eggplant, Màu cà tím,màu sắc 
-Lemon, Màu vàng chanh,màu sắc 
-Tan, Màu nâu sáng,màu sắc 
-Orchid, Màu hoa lan,màu sắc 
-Olive Green, Màu xanh olive,màu sắc 
-Topaz, Màu topaz,màu sắc 
-Sand, Màu cát,màu sắc 
-Cinnamon, Màu quế,màu sắc 
-Jade, Màu ngọc bích,màu sắc 
-Marigold, Màu cúc vạn thọ,màu sắc 
-Slate, Màu xám đá,màu sắc 
-Midnight Blue, Màu xanh đêm,màu sắc 
-Lavender, Màu oải hương,màu sắc 
-Ruby, Màu ngọc bích,màu sắc 
-Caramel, Màu caramel,màu sắc 
-Pewter, Màu thiếc,màu sắc 
-Sapphire, Màu ngọc lam,màu sắc 
-Mauve, Màu hồng lục,màu sắc 
-Coral, Màu san hô,màu sắc 
-Beige, Màu be,màu sắc 
-Teal, Màu xanh dương mòng két,màu sắc 
-Indigo, Màu xanh nước biển,màu sắc 
-Gold, Vàng,màu sắc 
-Silver, Bạc,màu sắc 
-Bronze, Đồng,màu sắc 
-Maroon, Màu đỏ rượu vang,màu sắc 
-Charcoal, Màu than củi,màu sắc 
-Coral, Màu san hô,màu sắc 
-Peach, Màu đào,màu sắc 
-Lavender, Màu oải hương,màu sắc 
-Tangerine, Màu cam chanh,màu sắc 
-Lime, Màu xanh chanh,màu sắc 
-Khaki, Màu mỡ,màu sắc 
-Plum, Màu mận,màu sắc 
-Sky Blue, Màu xanh da trời,màu sắc 
-Forest Green, Màu xanh rừng,màu sắc 
-Olive, Màu xanh olive,màu sắc 
-Salmon, Màu salmon,màu sắc 
-Mauve, Màu hồng lục,màu sắc 
-Burgundy, Màu đỏ cói,màu sắc 
-Cyan, Màu xanh lam đậm,màu sắc 
-Ivory, Màu ngà,màu sắc 
-Turquoise, Màu ngọc lục bảo,màu sắc 
-Aquamarine, Màu ngọc lam,màu sắc 
-Rust, Màu rỉ sét,màu sắc 
-Slate, Màu xám đá,màu sắc 
-Chartreuse, Màu chartreuse,màu sắc 
-Fuchsia, Màu đỏ hồng,màu sắc 
-Periwinkle, Màu xanh da trời hồng,màu sắc 
-Lilac, Màu cẩm thạch,màu sắc 
-Cream, Màu kem,màu sắc 
-Sienna, Màu sienna,màu sắc 
-Eggplant, Màu cà tím,màu sắc 
-Dog, Chó,động vật 
-Cat, Mèo,động vật 
-Horse, Ngựa,động vật 
-Cow, Bò,động vật 
-Pig, Lợn,động vật 
-Sheep, Cừu,động vật 
-Goat, Dê,động vật 
-Rabbit, Thỏ,động vật 
-Chicken, Gà,động vật 
-Duck, Vịt,động vật 
-Turkey, Gà tây,động vật 
-Goose, Ngỗng,động vật 
-Elephant, Voi,động vật 
-Lion, Sư tử,động vật 
-Tiger, Hổ,động vật 
-Bear, Gấu,động vật 
-Wolf, Sói,động vật 
-Fox, Cáo,động vật 
-Giraffe, Hươu cao cổ,động vật 
-Zebra, Ngựa vằn,động vật 
-Kangaroo, Kangaroo,động vật 
-Koala, Gấu túi,động vật 
-Gorilla, Khỉ đột,động vật 
-Chimpanzee, Khỉ tinh tinh,động vật 
-Panda, Gấu trúc,động vật 
-Dolphin, Cá heo,động vật 
-Whale, Cá voi,động vật 
-Shark, Cá mập,động vật 
-Octopus, Bạch tuộc,động vật 
-Jellyfish, Sứa,động vật 
-Crocodile, Cá sấu,động vật 
-Turtle, Rùa,động vật 
-Snake, Rắn,động vật 
-Lizard, Thằn lằn,động vật 
-Spider, Nhện,động vật 
-Scorpion, Bọ cạp,động vật 
-Butterfly, Bướm,động vật 
-Bee, Ong,động vật 
-Ant, Kiến,động vật 
-Grasshopper, Dế mèn,động vật 
-Ladybug, Bọ rùa,động vật 
-Beetle, Bọ cánh cứng,động vật 
-Snail, Ốc sên,động vật 
-Fish, Cá,động vật 
-Goldfish, Cá vàng,động vật 
-Salmon, Cá hồi,động vật 
-Trout, Cá hồi nước ngọt,động vật 
-Bass, Cá vược,động vật 
-Tuna, Cá ngừ,động vật 
-Swordfish, Cá kiếm,động vật 
-Crab, Cua,động vật 
-Lobster, Tôm hùm,động vật 
-Shrimp, Tôm,động vật 
-Oyster, Con hàu,động vật 
-Mussel, Con trai,động vật 
-Clam, Con sò,động vật 
-Squid, Mực,động vật 
-Eel, Lươn,động vật 
-Starfish, Sao biển,động vật 
-Sea urchin, Nhím biển,động vật 
-Seahorse, Ngựa biển,động vật 
-Pufferfish, Cá nóc,động vật 
-Parrot, Vẹt,động vật 
-Macaw, Vẹt lưỡi hung,động vật 
-Cockatoo, Kakatua,động vật 
-Canary, Thẻo,động vật 
-Finch, Chim chích chòe,động vật 
-Owl, Cú,động vật 
-Hawk, Đại bàng,động vật 
-Falcon, Saker,động vật 
-Pigeon, Bồ câu,động vật 
-Seagull, Mòng biển,động vật 
-Pelican, Bạch tuộc,động vật 
-Swan, Thiên nga,động vật 
-Duckling, Vịt con,động vật 
-Chicken, Gà con,động vật 
-Puppy, Chó con,động vật 
-Kitten, Mèo con,động vật 
-Foal, Ngựa con,động vật 
-Calf, Bê con,động vật 
-Piglet, Lợn con,động vật 
-Lamb, Cừu con,động vật 
-Kid, Dê con,động vật 
-Fawn, Thỏ con,động vật 
-Cub, Con thú,động vật 
-Baby, Em bé,động vật 
-Infant, Trẻ sơ sinh,động vật 
-Elderly, Người già,động vật 
-Veterinarian, Bác sĩ thú y,động vật 
-Zookeeper, Người chăm sóc động vật ở vườn thú,động vật 
-Wildlife, Động vật hoang dã,động vật 
-Habitat, Môi trường sống,động vật 
-Endangered, Có nguy cơ tuyệt chủng,động vật 
-Extinct, Tuyệt chủng,động vật 
-Conservation, Bảo tồn,động vật 
-Wildlife Sanctuary, Khu bảo tồn động vật hoang dã,động vật 
-National Park, Vườn quốc gia,động vật 
-Rainforest, Rừng mưa,động vật 
-Desert, Sa mạc,động vật 
-Ocean, Đại dương,động vật 
-Sea, Biển,động vật 
-Marine Life, Đời sống biển,đại dương 
-Coral Reef, Rặn san hô,đại dương 
-Underwater, Dưới nước,đại dương 
-Coast, Bờ biển,đại dương 
-Tide, Thủy triều,đại dương 
-Wave, Sóng,đại dương 
-Current, Dòng nước,đại dương 
-Beach, Bãi biển,đại dương 
-Seashore, Bãi biển,đại dương 
-Shoreline, Đường biển,đại dương 
-Tidal Zone, Vùng triều,đại dương 
-Coastal Erosion, Sự xói mòn bờ biển,đại dương 
-Continental Shelf, Khoang đại lục,đại dương 
-Island, Hòn đảo,đại dương 
-Archipelago, Quần đảo,đại dương 
-Peninsula, Bán đảo,đại dương 
-Seafloor, Đáy biển,đại dương 
-Seabed, Đáy biển,đại dương 
-Abyss, Vực sâu,đại dương 
-Deep Sea, Biển sâu,đại dương 
-Submarine, Tàu ngầm,đại dương 
-Shipwreck, Xác tàu,đại dương 
-Nautical, Liên quan đến biển,đại dương 
-Maritime, Hàng hải,đại dương 
-Navigation, Điều hướng biển,đại dương 
-Nautical Chart, Bản đồ biển,đại dương 
-Lighthouse, Ngọn hải đăng,đại dương 
-Buoy, Phao báo hiệu,đại dương 
-Marine Biology, Sinh học biển,đại dương 
-Oceanography, Đại dương học,đại dương 
-Marine Ecology, Sinh thái học biển,đại dương 
-Conservation, Bảo tồn,đại dương 
-Ecosystem, Hệ sinh thái,đại dương 
-Marine Mammal, Động vật biển,đại dương 
-Coral Polyp, Cái bọ biển san hô,đại dương 
-Marine Species, Loài biển,đại dương 
-Fish, Cá,đại dương 
-Shark, Cá mập,đại dương 
-Dolphin, Cá heo,đại dương 
-Whale, Cá voi,đại dương 
-Jellyfish, Sứa,đại dương 
-Sea Turtle, Rùa biển,đại dương 
-Seagull, Mòng biển,đại dương 
-Algae, Tảo biển,đại dương 
-Seaweed, Rong biển,đại dương 
-Plankton, Phytoplankton,đại dương 
-Seashell, Vỏ sò,đại dương 
-Seagrass, Cỏ biển,đại dương 
-Kelp, Rong nâu,đại dương 
-Tidal Power, Năng lượng triều,đại dương 
-Ocean Currents, Dòng chảy biển,đại dương 
-Tsunami, Sóng thần,đại dương 
-Typhoon, Bão táp,đại dương 
-Hurricane, Bão nhiệt đới,đại dương 
-Whirlpool, Xoáy nước,đại dương 
-Trench, Hàm sâu,đại dương 
-Seamount, Dãy núi biển,đại dương 
-Atoll, Rặn atoll,đại dương 
-Underwater Volcano, Núi lửa dưới nước,đại dương 
-Mangrove, Rừng ngập mặn,đại dương 
-Salinity, Nồng độ muối,đại dương 
-Coral Bleaching, Sự trắng san hô,đại dương 
-Marine Pollution, Ô nhiễm biển,đại dương 
-Overfishing, Khai thác quá mức,đại dương 
-Marine Protected Area, Khu vực bảo vệ biển,đại dương 
-Marine Reserve, Khu dự trữ biển,đại dương 
-Deep-Sea Exploration, Khám phá đáy biển,đại dương 
-Oceanic Research, Nghiên cứu đại dương,đại dương 
-Marine Sanctuary, Khu bảo tồn biển,đại dương 
-Ocean Conservation, Bảo tồn đại dương,đại dương 
-Coral Restoration, Phục hồi rặn san hô,đại dương 
-Marine Biodiversity, Đa dạng sinh học biển,đại dương 
-Maritime Law, Luật biển,đại dương 
-Marine Sanctuary, Khu bảo tồn biển,đại dương 
-Marine Reserves, Khu dự trữ biển,đại dương 
-Ocean Acidification, Sự axit hóa đại dương,đại dương 
-Marine Debris, Rác biển,đại dương 
-Nautical Knot, Nút biển,đại dương 
-Maritime Trade, Thương mại biển,đại dương 
-Coastal Community, Cộng đồng ven biển,đại dương 
-Marine Conservation, Bảo tồn biển,đại dương 
-Ocean Exploration, Khám phá đại dương,đại dương 
-Marine Ecosystem, Hệ sinh thái biển,đại dương 
-Seabird, Chim biển,đại dương 
-Pinniped, Động vật có vây chân truợc,đại dương 
-Maritime Archaeology, Khảo cổ biển,đại dương 
-Marine Geology, Địa chất biển,đại dương 
-Oceanographic Survey, Cuộc điều tra đại dương học,đại dương 
-Marine Biologist, Nhà sinh học biển,đại dương 
-Oceanographer, Nhà đại dương học,đại dương 
-Marine Ecologist, Nhà sinh thái học biển,đại dương 
-Conservationist, Người bảo tồn,đại dương 
-Marine Science, Khoa học biển,đại dương 
-Marine Environment, Môi trường biển,đại dương 
-Marine Conservation, Bảo tồn biển,đại dương 
-Oceanography, Đại dương học,đại dương 
-Marine Sanctuary, Khu bảo tồn biển,đại dương 
-Marine Reserve, Khu dự trữ biển,đại dương 
-Dinosaur, Khủng long,tiền sử 
-Fossil, Hóa thạch,tiền sử 
-Paleontology, Khảo cổ học,tiền sử 
-Extinct, Tuyệt chủng,tiền sử 
-Prehistoric, Tiền sử,tiền sử 
-Herbivore, Sinh vật ăn cỏ,tiền sử 
-Carnivore, Sinh vật ăn thịt,tiền sử 
-Omnivore, Sinh vật ăn tạp,tiền sử 
-Predator, Thú ăn thịt,tiền sử 
-Prey, Con mồi,tiền sử 
-Theropod, Bộ lạc bò sát,tiền sử 
-Sauropod, Bộ lạc tây ác,tiền sử 
-Pterosaur, Bộ lạc cánh dơi,tiền sử 
-Triceratops, Khủng long ba sừng,tiền sử 
-Tyrannosaurus Rex, Khủng long Tyrannosaurus Rex,tiền sử 
-Brachiosaurus, Khủng long Brachiosaurus,tiền sử 
-Stegosaurus, Khủng long Stegosaurus,tiền sử 
-Velociraptor, Khủng long Velociraptor,tiền sử 
-Diplodocus, Khủng long Diplodocus,tiền sử 
-Allosaurus, Khủng long Allosaurus,tiền sử 
-Archaeopteryx, Chim cổ hóa thạch,tiền sử 
-Plesiosaur, Cá heo cổ hóa thạch,tiền sử 
-Dimetrodon, Khủng long Dimetrodon,tiền sử 
-Spinosaurus, Khủng long Spinosaurus,tiền sử 
-Ankylosaurus, Khủng long Ankylosaurus,tiền sử 
-Pachycephalosaurus, Khủng long Pachycephalosaurus,tiền sử 
-Parasaurolophus, Khủng long Parasaurolophus,tiền sử 
-Allosaurus, Khủng long Allosaurus,tiền sử 
-Iguanodon, Khủng long Iguanodon,tiền sử 
-Apatosaurus, Khủng long Apatosaurus,tiền sử 
-Compsognathus, Khủng long Compsognathus,tiền sử 
-Coelophysis, Khủng long Coelophysis,tiền sử 
-Brontosaurus, Khủng long Brontosaurus,tiền sử 
-Gallimimus, Khủng long Gallimimus,tiền sử 
-Plateosaurus, Khủng long Plateosaurus,tiền sử 
-Microraptor, Khủng long Microraptor,tiền sử 
-Corythosaurus, Khủng long Corythosaurus,tiền sử 
-Archaeoceratops, Khủng long Archaeoceratops,tiền sử 
-Deinonychus, Khủng long Deinonychus,tiền sử 
-Megalosaurus, Khủng long Megalosaurus,tiền sử 
-Archaeornithomimus, Khủng long Archaeornithomimus,tiền sử 
-Oviraptor, Khủng long Oviraptor,tiền sử 
-Sinornithosaurus, Khủng long Sinornithosaurus,tiền sử 
-Troodon, Khủng long Troodon,tiền sử 
-Spinosaurus, Khủng long Spinosaurus,tiền sử 
-Velociraptor, Khủng long Velociraptor,tiền sử 
-Giganotosaurus, Khủng long Giganotosaurus,tiền sử 
-Ceratosaurus, Khủng long Ceratosaurus,tiền sử 
-Utahraptor, Khủng long Utahraptor,tiền sử 
-Theropod, Bộ lạc bò sát,tiền sử 
-Sauropod, Bộ lạc tây ác,tiền sử 
-Ornithopod, Bộ lạc mỏ vịt,tiền sử 
-Dromaeosaurid, Họ Dromaeosaurid,tiền sử 
-Ankylosaur, Bộ lạc án ky lô sâu,tiền sử 
-Carnosaur, Bộ lạc Carnosaur,tiền sử 
-Hadrosaur, Bộ lạc Hà độ sâu,tiền sử 
-Ceratopsian, Họ Ceratopsian,tiền sử 
-Pterosaur, Bộ lạc cánh dơi,tiền sử 
-Raptor, Kẻ săn mồi,tiền sử 
-Velociraptor, Khủng long Velociraptor,tiền sử 
-Iguanodon, Khủng long Iguanodon,tiền sử 
-Stegosaurus, Khủng long Stegosaurus,tiền sử 
-Brachiosaurus, Khủng long Brachiosaurus,tiền sử 
-Dilophosaurus, Khủng long Dilophosaurus,tiền sử 
-Anomalocaris, Sinh vật khủng long Anomalocaris,tiền sử 
-Parasaurolophus, Khủng long Parasaurolophus,tiền sử 
-Trilobite, Con sò,tiền sử 
-Plesiosaur, Cá heo cổ hóa thạch,tiền sử 
-Pachycephalosaurus, Khủng long Pachycephalosaurus,tiền sử 
-Spinosaurus, Khủng long Spinosaurus,tiền sử 
-Apatosaurus, Khủng long Apatosaurus,tiền sử 
-Compsognathus, Khủng long Compsognathus,tiền sử 
-Coelophysis, Khủng long Coelophysis,tiền sử 
-Brontosaurus, Khủng long Brontosaurus,tiền sử 
-Gallimimus, Khủng long Gallimimus,tiền sử 
-Plateosaurus, Khủng long Plateosaurus,tiền sử 
-Microraptor, Khủng long Microraptor,tiền sử 
-Corythosaurus, Khủng long Corythosaurus,tiền sử 
-Archaeoceratops, Khủng long Archaeoceratops,tiền sử 
-Deinonychus, Khủng long Deinonychus,tiền sử 
-Megalosaurus, Khủng long Megalosaurus,tiền sử 
-Archaeornithomimus, Khủng long Archaeornithomimus,tiền sử 
-Oviraptor, Khủng long Oviraptor,tiền sử 
-Sinornithosaurus, Khủng long Sinornithosaurus,tiền sử 
-Troodon, Khủng long Troodon,tiền sử 
-Spinosaurus, Khủng long Spinosaurus,tiền sử 
-Velociraptor, Khủng long Velociraptor,tiền sử 
-Giganotosaurus, Khủng long Giganotosaurus,tiền sử 
-Ceratosaurus, Khủng long Ceratosaurus,tiền sử 
-Utahraptor, Khủng long Utahraptor,tiền sử 
-Baryonyx, Khủng long Baryonyx,tiền sử 
-Archaeopteryx, Chim cổ hóa thạch,tiền sử 
-Megalodon, Cá mập Megalodon,tiền sử 
-Ichthyosaur, Cá heo cổ hóa thạch,tiền sử 
-Stegosaurus, Khủng long Stegosaurus,tiền sử 
-Triceratops, Khủng long ba sừng,tiền sử 
-Pteranodon, Khủng long Pteranodon,tiền sử 
-Quetzalcoatlus, Khủng long Quetzalcoatlus,tiền sử 
-Styracosaurus, Khủng long Styracosaurus,tiền sử 
-Allosaurus, Khủng long Allosaurus,tiền sử 
-Vehicle, Phương tiện,phương tiện giao thông 
-Car, Xe hơi,phương tiện giao thông 
-Motorcycle, Xe máy,phương tiện giao thông 
-Bicycle, Xe đạp,phương tiện giao thông 
-Truck, Xe tải,phương tiện giao thông 
-Bus, Xe buýt,phương tiện giao thông 
-Train, Tàu hỏa,phương tiện giao thông 
-Subway, Tàu điện ngầm,phương tiện giao thông 
-Tram, Xe điện,phương tiện giao thông 
-Aircraft, Máy bay,phương tiện giao thông 
-Helicopter, Trực thăng,phương tiện giao thông 
-Boat, Thuyền,phương tiện giao thông 
-Ship, Tàu biển,phương tiện giao thông 
-Yacht, Du thuyền,phương tiện giao thông 
-Scooter, Xe tay ga,phương tiện giao thông 
-Van, Xe bán tải,phương tiện giao thông 
-RV (Recreational Vehicle), Xe du lịch,phương tiện giao thông 
-Segway, Xe điện tự cân bằng,phương tiện giao thông 
-Hoverboard, Ván trượt điện tự cân bằng,phương tiện giao thông 
-Electric Car, Ô tô điện,phương tiện giao thông 
-Hybrid Car, Ô tô lai,phương tiện giao thông 
-Convertible, Xe mui trần,phương tiện giao thông 
-SUV (Sport Utility Vehicle), Xe thể thao đa dụng,phương tiện giao thông 
-Minivan, Xe du lịch đa năng,phương tiện giao thông 
-Sedan, Xe gầm cao,phương tiện giao thông 
-Limousine, Xe hơi hạng sang,phương tiện giao thông 
-Pick-up Truck, Xe bán tải,phương tiện giao thông 
-Roadster, Xe thể thao hai chỗ,phương tiện giao thông 
-Double-decker Bus, Xe buýt hai tầng,phương tiện giao thông 
-Cable Car, Xe cáp treo,phương tiện giao thông 
-Trolleybus, Xe buýt điện trên đường ray,phương tiện giao thông 
-Monorail, Tàu đường sắt đơn,phương tiện giao thông 
-High-speed Train, Tàu cao tốc,phương tiện giao thông 
-Freight Train, Tàu hàng hóa,phương tiện giao thông 
-Cruise Ship, Tàu du lịch biển,phương tiện giao thông 
-Cargo Ship, Tàu vận tải hàng hóa,phương tiện giao thông 
-Rowboat, Thuyền chèo,phương tiện giao thông 
-Canoe, Thuyền bè,phương tiện giao thông 
-Sailboat, Thuyền buồm,phương tiện giao thông 
-Submarine, Tàu ngầm,phương tiện giao thông 
-Fighter Jet, Máy bay tiêm kích,phương tiện giao thông 
-Passenger Plane, Máy bay hành khách,phương tiện giao thông 
-Cargo Plane, Máy bay vận tải hàng hóa,phương tiện giao thông 
-Airship, Tàu không khí,phương tiện giao thông 
-Speedboat, Thuyền tốc độ,phương tiện giao thông 
-Fishing Boat, Thuyền đánh cá,phương tiện giao thông 
-Jet Ski, Máy tạo sóng,phương tiện giao thông 
-Canopy, Ô nắng,phương tiện giao thông 
-Roof Rack, Khung nắng,phương tiện giao thông 
-Exhaust Pipe, Ống xả,phương tiện giao thông 
-Windshield, Kính chắn gió,phương tiện giao thông 
-Dashboard, Bảng điều khiển,phương tiện giao thông 
-Headlight, Đèn pha,phương tiện giao thông 
-Taillight, Đèn hậu,phương tiện giao thông 
-Bumper, Bộ phận bảo vệ trước xe,phương tiện giao thông 
-Tire, Lốp xe,phương tiện giao thông 
-Wheel, Bánh xe,phương tiện giao thông 
-Steering Wheel, Vô lăng,phương tiện giao thông 
-Brake, Phanh,phương tiện giao thông 
-Accelerator, Bàn đạp ga,phương tiện giao thông 
-Clutch, Ly hợp,phương tiện giao thông 
-Gearshift, Cần số,phương tiện giao thông 
-Key, Chìa khóa,phương tiện giao thông 
-Engine, Động cơ,phương tiện giao thông 
-Transmission, Hộp số,phương tiện giao thông 
-Battery, Ắc quy,phương tiện giao thông 
-Exhaust System, Hệ thống xả khí,phương tiện giao thông 
-Fuel Tank, Bình nhiên liệu,phương tiện giao thông 
-Radiator, Bình nước làm mát,phương tiện giao thông 
-Air Conditioning, Điều hòa không khí,phương tiện giao thông 
-GPS (Global Positioning System), Hệ thống định vị toàn cầu,phương tiện giao thông 
-Radio, Đài phát thanh,phương tiện giao thông 
-CD Player, Máy nghe đĩa CD,phương tiện giao thông 
-Bluetooth, Kết nối Bluetooth,phương tiện giao thông 
-Dashboard Camera, Camera ghi hình trên xe,phương tiện giao thông 
-Seat Belt, Dây đeo an toàn,phương tiện giao thông 
-Airbag, Gói khí an toàn,phương tiện giao thông 
-Car Alarm, Báo động ô tô,phương tiện giao thông 
-GPS Navigation, Định hướng GPS,phương tiện giao thông 
-Cruise Control, Điều khiển hành trình,phương tiện giao thông 
-Hybrid Engine, Động cơ lai,phương tiện giao thông 
-Suspension, Hệ thống treo,phương tiện giao thông 
-Transmission Fluid, Dầu hộp số,phương tiện giao thông 
-Spark Plug, Bóng đèn gắp lửa,phương tiện giao thông 
-Oil Filter, Bộ lọc dầu,phương tiện giao thông 
-Windshield Wipers, Cần gạt nước kính chắn gió,phương tiện giao thông 
-Rearview Mirror, Gương hậu,phương tiện giao thông 
-Sunroof, Cửa nóc,phương tiện giao thông 
-Horn, Còi xe,phương tiện giao thông 
-Ignition, Hệ thống đánh lửa,phương tiện giao thông 
-Side Mirror, Gương phụ,phương tiện giao thông 
-Gasoline, Xăng,phương tiện giao thông 
-Diesel, Dầu diesel,phương tiện giao thông 
-Electric Vehicle (EV), Xe điện,phương tiện giao thông 
-Hybrid Electric Vehicle (HEV), Xe điện lai,phương tiện giao thông 
-Plug-in Hybrid Electric Vehicle (PHEV), Xe điện lai có thể sạc,phương tiện giao thông 
-Autonomous Vehicle, Xe tự lái,phương tiện giao thông 
-Ride-sharing, Chia sẻ chuyến đi,phương tiện giao thông 
-Carpooling, Cùng nhau đi chung,phương tiện giao thông 
-Traffic Jam, Kẹt xe,phương tiện giao thông 
-Head, Đầu,cơ thể 
-Face, Khuôn mặt,cơ thể 
-Hair, Tóc,cơ thể 
-Eye, Mắt,cơ thể 
-Ear, Tai,cơ thể 
-Nose, Mũi,cơ thể 
-Mouth, Miệng,cơ thể 
-Lip, Môi,cơ thể 
-Tooth, Răng,cơ thể 
-Tongue, Lưỡi,cơ thể 
-Neck, Cổ,cơ thể 
-Throat, Họng,cơ thể 
-Shoulder, Vai,cơ thể 
-Arm, Cánh tay,cơ thể 
-Elbow, Khuỷu tay,cơ thể 
-Hand, Tay,cơ thể 
-Finger, Ngón tay,cơ thể 
-Thumb, Ngón tay cái,cơ thể 
-Chest, Ngực,cơ thể 
-Breast, Vùng ngực,cơ thể 
-Heart, Trái tim,cơ thể 
-Back, Lưng,cơ thể 
-Stomach, Dạ dày,cơ thể 
-Abdomen, Bụng dưới,cơ thể 
-Waist, Eo,cơ thể 
-Hip, Hông,cơ thể 
-Buttocks, Mông,cơ thể 
-Leg, Chân,cơ thể 
-Thigh, Đùi,cơ thể 
-Knee, Đầu gối,cơ thể 
-Calf, Bắp chân dưới,cơ thể 
-Ankle, Cổ chân,cơ thể 
-Foot, Bàn chân,cơ thể 
-Heel, Gót chân,cơ thể 
-Sole, Đáy chân,cơ thể 
-Toe, Ngón chân,cơ thể 
-Skin, Da,cơ thể 
-Nerve, Thần kinh,cơ thể 
-Bone, Xương,cơ thể 
-Muscle, Cơ,cơ thể 
-Joint, Khớp xương,cơ thể 
-Organ, Cơ quan,cơ thể 
-Brain, Não,cơ thể 
-Spine, Xương sống,cơ thể 
-Rib, Sườn,cơ thể 
-Lung, Phổi,cơ thể 
-Liver, Gan,cơ thể 
-Kidney, Thận,cơ thể 
-Bladder, Bàng quang,cơ thể 
-Intestine, Ruột,cơ thể 
-Pancreas, Tuyến tụy,cơ thể 
-Spleen, Lách,cơ thể 
-Gallbladder, Túi mật,cơ thể 
-Thyroid, Tuyến giáp,cơ thể 
-Pituitary Gland, Tuyến yên,cơ thể 
-Adrenal Gland, Tuyến thượng thận,cơ thể 
-Ovary, Buồng trứng (nữ),cơ thể 
-Testicle, Tinh hoàn (nam),cơ thể 
-Uterus, Tử cung,cơ thể 
-Cervix, Cổ tử cung,cơ thể 
-Vagina, Âm đạo,cơ thể 
-Penis, Dương vật,cơ thể 
-Testis, Tinh hoàn,cơ thể 
-Artery, Động mạch,cơ thể 
-Vein, Tĩnh mạch,cơ thể 
-Blood, Máu,cơ thể 
-Skin, Da,cơ thể 
-Nails, Móng tay,cơ thể 
-Palm, Bàn tay,cơ thể 
-Wrist, Cổ tay,cơ thể 
-Pulse, Nhịp tim,cơ thể 
-Freckle, Tàn nhang,cơ thể 
-Birthmark, Vết sẹo,cơ thể 
-Scar, Sẹo,cơ thể 
-Wrinkle, Nếp nhăn,cơ thể 
-Cell, Tế bào,cơ thể 
-Tissue, Mô,cơ thể 
-Tendon, Gân,cơ thể 
-Ligament, Dây chằng,cơ thể 
-Cartilage, Sụn,cơ thể 
-Epidermis, Biểu bì,cơ thể 
-Dermis, Lớp da dưới,cơ thể 
-Pore, Lỗ chân lông,cơ thể 
-Sweat Gland, Tuyến mồ hôi,cơ thể 
-Fat, Mỡ,cơ thể 
-Blood Vessel, Mạch máu,cơ thể 
-Lymph Node, Bạch huyết,cơ thể 
-Hormone, Hormon,cơ thể 
-Enzyme, Enzyme,cơ thể 
-Digestive System, Hệ tiêu hóa,cơ thể 
-Respiratory System, Hệ hô hấp,cơ thể 
-Circulatory System, Hệ tuần hoàn,cơ thể 
-Nervous System, Hệ thần kinh,cơ thể 
-Endocrine System, Hệ nội tiết,cơ thể 
-Immune System, Hệ miễn dịch,cơ thể 
-Reproductive System, Hệ sinh sản,cơ thể 
-Respiratory Tract, Đường hô hấp,cơ thể 
-Nervous Tissue, Mô thần kinh,cơ thể 
-Glandular Tissue, Mô tuyến,cơ thể 
-Skeletal System, Hệ xương,cơ thể 
+Athlete, Vận động viên,thể thao
+Sports, Thể thao,thể thao
+Competition, Cuộc thi,thể thao
+Team, Đội,thể thao
+Game, Trò chơi,thể thao
+Victory, Chiến thắng,thể thao
+Defeat, Thất bại,thể thao
+Tournament, Giải đấu,thể thao
+Championship, Chức vô địch,thể thao
+Match, Trận đấu,thể thao
+Score, Điểm số,thể thao
+Referee, Trọng tài,thể thao
+Coach, HLV,thể thao
+Training, Huấn luyện,thể thao
+Player, Cầu thủ,thể thao
+Uniform, Đồng phục,thể thao
+Field, Sân cỏ,thể thao
+Court, Sân thi đấu,thể thao
+Stadium, Sân vận động,thể thao
+Equipment, Thiết bị,thể thao
+Ball, Bóng,thể thao
+Racket, Vợt,thể thao
+Net, Mạng,thể thao
+Goal, Bàn thắng,thể thao
+Village of Athlete, Làng vận động viên,thể thao
+Medal, Huy chương,thể thao
+Ceremony, Lễ trao giải,thể thao
+Trophy, Cúp thưởng,thể thao
+Record, Kỷ lục,thể thao
+Relay, Đua tiếp sức,thể thao
+Marathon, Giải chạy marathon,thể thao
+Sprint, Chạy nhanh,thể thao
+Endurance, Sức bền,thể thao
+Gymnastics, Tập thể dục,thể thao
+Swimming, Bơi lội,thể thao
+Diving, Nhảy từ trampoline,thể thao
+Cycling, Đua xe đạp,thể thao
+Boxing, Đánh quyền,thể thao
+Wrestling, Đấm bốc,thể thao
+Judo, Judo,thể thao
+Karate, Karate,thể thao
+Taekwondo, Taekwondo,thể thao
+Weightlifting, Cử tạ,thể thao
+Archery, Bắn cung,thể thao
+Equestrian, Đua ngựa,thể thao
+Rowing, Chèo thuyền,thể thao
+Sailing, Lướt ván,thể thao
+Skiing, Trượt tuyết,thể thao
+Snowboarding, Lướt ván trên tuyết,thể thao
+Ice Hockey, Khúc côn cầu trên băng,thể thao
+Figure Skating, Trượt băng nghệ thuật,thể thao
+Gymnast, Vận động viên thể dục dụng cụ,thể thao
+Swimmer, Vận động viên bơi lội,thể thao
+Diver, Vận động viên nhảy từ trampoline,thể thao
+Cyclist, Vận động viên đua xe đạp,thể thao
+Boxer, Vận động viên đánh quyền,thể thao
+Wrestler, Vận động viên đấm bốc,thể thao
+Judoka, Vận động viên Judo,thể thao
+Karateka, Vận động viên Karate,thể thao
+Taekwondoka, Vận động viên Taekwondo,thể thao
+Weightlifter, Vận động viên cử tạ,thể thao
+Archer, Vận động viên bắn cung,thể thao
+Equestrian, Vận động viên đua ngựa,thể thao
+Rower, Vận động viên chèo thuyền,thể thao
+Sailor, Vận động viên lướt ván,thể thao
+Skier, Vận động viên trượt tuyết,thể thao
+Snowboarder, Vận động viên lướt ván trên tuyết,thể thao
+Ice Hockey Player, Cầu thủ khúc côn cầu trên băng,thể thao
+Figure Skater, Vận động viên trượt băng nghệ thuật,thể thao
+Sportsmanship, Tinh thần thể thao,thể thao
+Fair Play, Chơi trong tinh thần thể thao,thể thao
+Sports Venue, Địa điểm thi đấu,thể thao
+Fan, Cổ động viên,thể thao
+Spectator, Người xem,thể thao
+Cheer, Cổ vũ,thể thao
+Oath of Athlete, Lời tuyên thệ của vận động viên,thể thao
+Sportsmanship, Tinh thần thể thao,thể thao
+Medal Ceremony, Lễ trao giải,thể thao
+Opening Ceremony, Lễ khai mạc,thể thao
+Closing Ceremony, Lễ bế mạc,thể thao
+National Anthem, Quốc ca,thể thao
+Olympic Games, Thế vận hội,thể thao
+Paralympics, Thế vận hội dành cho người khuyết tật,thể thao
+World Cup, World Cup,thể thao
+League, Giải đấu,thể thao
+Tournament, Giải đấu,thể thao
+Qualification, Vòng loại,thể thao
+Knockout, Đấu loại trực tiếp,thể thao
+Tie, Trận hòa,thể thao
+Victory, Chiến thắng,thể thao
+Defeat, Thất bại,thể thao
+Gold Medal, Huy chương vàng,thể thao
+Silver Medal, Huy chương bạc,thể thao
+Bronze Medal, Huy chương đồng,thể thao
+Sports Equipment, Thiết bị thể thao,thể thao
+Sports Psychology, Tâm lý học thể thao,thể thao
+Sports Nutrition, Dinh dưỡng thể thao,thể thao
+Sports Medicine, Y học thể thao,thể thao
+Sports Injury, Chấn thương thể thao,thể thao
+Sports Science, Khoa học thể thao,thể thao
+Fashion, Thời trang,thời trang
+Clothing, Quần áo,thời trang
+Apparel, Đồ trang phục,thời trang
+Designer, Nhà thiết kế,thời trang
+Style, Phong cách,thời trang
+Trend, Xu hướng,thời trang
+Outfit, Bộ trang phục,thời trang
+Accessories, Phụ kiện,thời trang
+Couture, Thời trang cao cấp,thời trang
+Runway, Sàn diễn thời trang,thời trang
+Model, Người mẫu,thời trang
+Catwalk, Nơi người mẫu trình diễn,thời trang
+Fabric, Vải,thời trang
+Texture, Đặc tính bề mặt,thời trang
+Sewing, May vá,thời trang
+Tailor, Thợ may,thời trang
+Dress, Váy,thời trang
+Suit, Áo vest,thời trang
+Shirt, Áo sơ mi,thời trang
+Pants, Quần,thời trang
+Skirt, Váy ngắn,thời trang
+Blouse, Áo blouse,thời trang
+Jacket, Áo khoác,thời trang
+Coat, Áo khoác dày,thời trang
+Sweater, Áo len,thời trang
+Scarf, Khăn quàng cổ,thời trang
+Hat, Mũ,thời trang
+Shoes, Giày,thời trang
+Boots, Giày bốt,thời trang
+Sandals, Dép xỏ ngón,thời trang
+High Heels, Giày cao gót,thời trang
+Sneakers, Giày thể thao,thời trang
+Handbag, Túi xách,thời trang
+Clutch, Túi cầm tay,thời trang
+Belt, Thắt lưng,thời trang
+Jewelry, Trang sức,thời trang
+Necklace, Dây chuyền,thời trang
+Earrings, Bông tai,thời trang
+Bracelet, Vòng cổ tay,thời trang
+Ring, Nhẫn,thời trang
+Sunglasses, Kính râm,thời trang
+Watch, Đồng hồ,thời trang
+Lingerie, Đồ lót,thời trang
+Swimsuit, Áo tắm,thời trang
+Formal Wear, Trang phục dự tiệc,thời trang
+Casual Wear, Trang phục thường ngày,thời trang
+Vintage, Thời trang cổ điển,thời trang
+Bohemian, Phong cách Bohemian,thời trang
+Streetwear, Thời trang đường phố,thời trang
+Sportswear, Thời trang thể thao,thời trang
+Haute Couture, Thời trang cao cấp,thời trang
+Ready-to-Wear, Trang phục sẵn sàng mặc,thời trang
+Fashion Show, Buổi trình diễn thời trang,thời trang
+Fashion Week, Tuần lễ thời trang,thời trang
+Haute Couture, Thời trang cao cấp,thời trang
+Fashion Industry, Ngành công nghiệp thời trang,thời trang
+Fashion Designer, Nhà thiết kế thời trang,thời trang
+Runway Model, Người mẫu trên sàn diễn,thời trang
+Dressmaker, Người làm váy,thời trang
+Textile, Ngành dệt may,thời trang
+Fabric Store, Cửa hàng vải,thời trang
+Color, Màu sắc,thời trang
+Pattern, Hoa văn,thời trang
+Sewing Machine, Máy may,thời trang
+Dress Form, Bản định hình,thời trang
+Fitting, Thử đồ,thời trang
+Tailoring, Thuộc về thời trang,thời trang
+Fashion Retail, Bán lẻ thời trang,thời trang
+Style Icon, Người thần tượng phong cách,thời trang
+Wardrobe, Tủ quần áo,thời trang
+Make-up, Trang điểm,thời trang
+Hairstyle, Kiểu tóc,thời trang
+Beauty, Sắc đẹp,thời trang
+Fashion Magazine, Tạp chí thời trang,thời trang
+Fashion Blog, Blog thời trang,thời trang
+Fashion Photographer, Nhiếp ảnh gia thời trang,thời trang
+Runway Show, Buổi trình diễn sàn diễn,thời trang
+Fashion Week, Tuần lễ thời trang,thời trang
+Fashion Trend, Xu hướng thời trang,thời trang
+Fashion Statement, Tuyên bố thời trang,thời trang
+Dress Code, Quy định trang phục,thời trang
+Red Carpet, Thảm đỏ,thời trang
+Fashion Sketch, Bản phác thảo thời trang,thời trang
+Fashion Accessories, Phụ kiện thời trang,thời trang
+Street Style, Phong cách đường phố,thời trang
+Fashion Boutique, Cửa hàng thời trang,thời trang
+Fashion Runway, Sàn diễn thời trang,thời trang
+Fashion Industry, Ngành công nghiệp thời trang,thời trang
+Fashion Label, Nhãn hiệu thời trang,thời trang
+Couturier, Thợ may thời trang cao cấp,thời trang
+Fashion Brand, Thương hiệu thời trang,thời trang
+Fashion Model, Người mẫu thời trang,thời trang
+Fashionista, Người yêu thời trang,thời trang
+Fashion Blog, Blog thời trang,thời trang
+Fashion Consultant, Chuyên gia thời trang,thời trang
+Fashion PR, Quảng cáo thời trang,thời trang
+Fashion Designer, Nhà thiết kế thời trang,thời trang
+Fashion Stylist, Chuyên gia trang điểm thời trang,thời trang
+Fashion Marketing, Tiếp thị thời trang,thời trang
+Fashion Journalism, Báo chí thời trang,thời trang
+Red, Đỏ,màu sắc
+Blue, Xanh dương,màu sắc
+Green, Xanh lá cây,màu sắc
+Yellow, Vàng,màu sắc
+Orange, Cam,màu sắc
+Purple, Tím,màu sắc
+Pink, Hồng,màu sắc
+Brown, Nâu,màu sắc
+Gray, Xám,màu sắc
+Black, Đen,màu sắc
+White, Trắng,màu sắc
+Beige, Màu be,màu sắc
+Turquoise, Màu ngọc lục bảo,màu sắc
+Gold, Vàng,màu sắc
+Silver, Bạc,màu sắc
+Bronze, Đồng,màu sắc
+Maroon, Màu đỏ rượu vang,màu sắc
+Teal, Màu xanh dương mòng két,màu sắc
+Lavender, Màu oải hương,màu sắc
+Indigo, Màu xanh nước biển,màu sắc
+Magenta, Màu hồng đậm,màu sắc
+Charcoal, Màu than củi,màu sắc
+Coral, Màu san hô,màu sắc
+Peach, Màu đào,màu sắc
+Lavender, Màu oải hương,màu sắc
+Tangerine, Màu cam chanh,màu sắc
+Lime, Màu xanh chanh,màu sắc
+Khaki, Màu mỡ,màu sắc
+Plum, Màu mận,màu sắc
+Sky Blue, Màu xanh da trời,màu sắc
+Forest Green, Màu xanh rừng,màu sắc
+Olive, Màu xanh olive,màu sắc
+Salmon, Màu salmon,màu sắc
+Mauve, Màu hồng lục,màu sắc
+Burgundy, Màu đỏ cói,màu sắc
+Cyan, Màu xanh lam đậm,màu sắc
+Ivory, Màu ngà,màu sắc
+Turquoise, Màu ngọc lục bảo,màu sắc
+Aquamarine, Màu ngọc lam,màu sắc
+Rust, Màu rỉ sét,màu sắc
+Slate, Màu xám đá,màu sắc
+Chartreuse, Màu chartreuse,màu sắc
+Fuchsia, Màu đỏ hồng,màu sắc
+Periwinkle, Màu xanh da trời hồng,màu sắc
+Lilac, Màu cẩm thạch,màu sắc
+Cream, Màu kem,màu sắc
+Sienna, Màu sienna,màu sắc
+Eggplant, Màu cà tím,màu sắc
+Lemon, Màu vàng chanh,màu sắc
+Tan, Màu nâu sáng,màu sắc
+Orchid, Màu hoa lan,màu sắc
+Olive Green, Màu xanh olive,màu sắc
+Topaz, Màu topaz,màu sắc
+Sand, Màu cát,màu sắc
+Cinnamon, Màu quế,màu sắc
+Jade, Màu ngọc bích,màu sắc
+Marigold, Màu cúc vạn thọ,màu sắc
+Slate, Màu xám đá,màu sắc
+Midnight Blue, Màu xanh đêm,màu sắc
+Lavender, Màu oải hương,màu sắc
+Ruby, Màu ngọc bích,màu sắc
+Caramel, Màu caramel,màu sắc
+Pewter, Màu thiếc,màu sắc
+Sapphire, Màu ngọc lam,màu sắc
+Mauve, Màu hồng lục,màu sắc
+Coral, Màu san hô,màu sắc
+Beige, Màu be,màu sắc
+Teal, Màu xanh dương mòng két,màu sắc
+Indigo, Màu xanh nước biển,màu sắc
+Gold, Vàng,màu sắc
+Silver, Bạc,màu sắc
+Bronze, Đồng,màu sắc
+Maroon, Màu đỏ rượu vang,màu sắc
+Charcoal, Màu than củi,màu sắc
+Coral, Màu san hô,màu sắc
+Peach, Màu đào,màu sắc
+Lavender, Màu oải hương,màu sắc
+Tangerine, Màu cam chanh,màu sắc
+Lime, Màu xanh chanh,màu sắc
+Khaki, Màu mỡ,màu sắc
+Plum, Màu mận,màu sắc
+Sky Blue, Màu xanh da trời,màu sắc
+Forest Green, Màu xanh rừng,màu sắc
+Olive, Màu xanh olive,màu sắc
+Salmon, Màu salmon,màu sắc
+Mauve, Màu hồng lục,màu sắc
+Burgundy, Màu đỏ cói,màu sắc
+Cyan, Màu xanh lam đậm,màu sắc
+Ivory, Màu ngà,màu sắc
+Turquoise, Màu ngọc lục bảo,màu sắc
+Aquamarine, Màu ngọc lam,màu sắc
+Rust, Màu rỉ sét,màu sắc
+Slate, Màu xám đá,màu sắc
+Chartreuse, Màu chartreuse,màu sắc
+Fuchsia, Màu đỏ hồng,màu sắc
+Periwinkle, Màu xanh da trời hồng,màu sắc
+Lilac, Màu cẩm thạch,màu sắc
+Cream, Màu kem,màu sắc
+Sienna, Màu sienna,màu sắc
+Eggplant, Màu cà tím,màu sắc
+Dog, Chó,động vật
+Cat, Mèo,động vật
+Horse, Ngựa,động vật
+Cow, Bò,động vật
+Pig, Lợn,động vật
+Sheep, Cừu,động vật
+Goat, Dê,động vật
+Rabbit, Thỏ,động vật
+Chicken, Gà,động vật
+Duck, Vịt,động vật
+Turkey, Gà tây,động vật
+Goose, Ngỗng,động vật
+Elephant, Voi,động vật
+Lion, Sư tử,động vật
+Tiger, Hổ,động vật
+Bear, Gấu,động vật
+Wolf, Sói,động vật
+Fox, Cáo,động vật
+Giraffe, Hươu cao cổ,động vật
+Zebra, Ngựa vằn,động vật
+Kangaroo, Kangaroo,động vật
+Koala, Gấu túi,động vật
+Gorilla, Khỉ đột,động vật
+Chimpanzee, Khỉ tinh tinh,động vật
+Panda, Gấu trúc,động vật
+Dolphin, Cá heo,động vật
+Whale, Cá voi,động vật
+Shark, Cá mập,động vật
+Octopus, Bạch tuộc,động vật
+Jellyfish, Sứa,động vật
+Crocodile, Cá sấu,động vật
+Turtle, Rùa,động vật
+Snake, Rắn,động vật
+Lizard, Thằn lằn,động vật
+Spider, Nhện,động vật
+Scorpion, Bọ cạp,động vật
+Butterfly, Bướm,động vật
+Bee, Ong,động vật
+Ant, Kiến,động vật
+Grasshopper, Dế mèn,động vật
+Ladybug, Bọ rùa,động vật
+Beetle, Bọ cánh cứng,động vật
+Snail, Ốc sên,động vật
+Fish, Cá,động vật
+Goldfish, Cá vàng,động vật
+Salmon, Cá hồi,động vật
+Trout, Cá hồi nước ngọt,động vật
+Bass, Cá vược,động vật
+Tuna, Cá ngừ,động vật
+Swordfish, Cá kiếm,động vật
+Crab, Cua,động vật
+Lobster, Tôm hùm,động vật
+Shrimp, Tôm,động vật
+Oyster, Con hàu,động vật
+Mussel, Con trai,động vật
+Clam, Con sò,động vật
+Squid, Mực,động vật
+Eel, Lươn,động vật
+Starfish, Sao biển,động vật
+Sea urchin, Nhím biển,động vật
+Seahorse, Ngựa biển,động vật
+Pufferfish, Cá nóc,động vật
+Parrot, Vẹt,động vật
+Macaw, Vẹt lưỡi hung,động vật
+Cockatoo, Kakatua,động vật
+Canary, Thẻo,động vật
+Finch, Chim chích chòe,động vật
+Owl, Cú,động vật
+Hawk, Đại bàng,động vật
+Falcon, Saker,động vật
+Pigeon, Bồ câu,động vật
+Seagull, Mòng biển,động vật
+Pelican, Bạch tuộc,động vật
+Swan, Thiên nga,động vật
+Duckling, Vịt con,động vật
+Chicken, Gà con,động vật
+Puppy, Chó con,động vật
+Kitten, Mèo con,động vật
+Foal, Ngựa con,động vật
+Calf, Bê con,động vật
+Piglet, Lợn con,động vật
+Lamb, Cừu con,động vật
+Kid, Dê con,động vật
+Fawn, Thỏ con,động vật
+Cub, Con thú,động vật
+Baby, Em bé,động vật
+Infant, Trẻ sơ sinh,động vật
+Elderly, Người già,động vật
+Veterinarian, Bác sĩ thú y,động vật
+Zookeeper, Người chăm sóc động vật ở vườn thú,động vật
+Wildlife, Động vật hoang dã,động vật
+Habitat, Môi trường sống,động vật
+Endangered, Có nguy cơ tuyệt chủng,động vật
+Extinct, Tuyệt chủng,động vật
+Conservation, Bảo tồn,động vật
+Wildlife Sanctuary, Khu bảo tồn động vật hoang dã,động vật
+National Park, Vườn quốc gia,động vật
+Rainforest, Rừng mưa,động vật
+Desert, Sa mạc,động vật
+Ocean, Đại dương,động vật
+Sea, Biển,động vật
+Marine Life, Đời sống biển,đại dương
+Coral Reef, Rặn san hô,đại dương
+Underwater, Dưới nước,đại dương
+Coast, Bờ biển,đại dương
+Tide, Thủy triều,đại dương
+Wave, Sóng,đại dương
+Current, Dòng nước,đại dương
+Beach, Bãi biển,đại dương
+Seashore, Bãi biển,đại dương
+Shoreline, Đường biển,đại dương
+Tidal Zone, Vùng triều,đại dương
+Coastal Erosion, Sự xói mòn bờ biển,đại dương
+Continental Shelf, Khoang đại lục,đại dương
+Island, Hòn đảo,đại dương
+Archipelago, Quần đảo,đại dương
+Peninsula, Bán đảo,đại dương
+Seafloor, Đáy biển,đại dương
+Seabed, Đáy biển,đại dương
+Abyss, Vực sâu,đại dương
+Deep Sea, Biển sâu,đại dương
+Submarine, Tàu ngầm,đại dương
+Shipwreck, Xác tàu,đại dương
+Nautical, Liên quan đến biển,đại dương
+Maritime, Hàng hải,đại dương
+Navigation, Điều hướng biển,đại dương
+Nautical Chart, Bản đồ biển,đại dương
+Lighthouse, Ngọn hải đăng,đại dương
+Buoy, Phao báo hiệu,đại dương
+Marine Biology, Sinh học biển,đại dương
+Oceanography, Đại dương học,đại dương
+Marine Ecology, Sinh thái học biển,đại dương
+Conservation, Bảo tồn,đại dương
+Ecosystem, Hệ sinh thái,đại dương
+Marine Mammal, Động vật biển,đại dương
+Coral Polyp, Cái bọ biển san hô,đại dương
+Marine Species, Loài biển,đại dương
+Fish, Cá,đại dương
+Shark, Cá mập,đại dương
+Dolphin, Cá heo,đại dương
+Whale, Cá voi,đại dương
+Jellyfish, Sứa,đại dương
+Sea Turtle, Rùa biển,đại dương
+Seagull, Mòng biển,đại dương
+Algae, Tảo biển,đại dương
+Seaweed, Rong biển,đại dương
+Plankton, Phytoplankton,đại dương
+Seashell, Vỏ sò,đại dương
+Seagrass, Cỏ biển,đại dương
+Kelp, Rong nâu,đại dương
+Tidal Power, Năng lượng triều,đại dương
+Ocean Currents, Dòng chảy biển,đại dương
+Tsunami, Sóng thần,đại dương
+Typhoon, Bão táp,đại dương
+Hurricane, Bão nhiệt đới,đại dương
+Whirlpool, Xoáy nước,đại dương
+Trench, Hàm sâu,đại dương
+Seamount, Dãy núi biển,đại dương
+Atoll, Rặn atoll,đại dương
+Underwater Volcano, Núi lửa dưới nước,đại dương
+Mangrove, Rừng ngập mặn,đại dương
+Salinity, Nồng độ muối,đại dương
+Coral Bleaching, Sự trắng san hô,đại dương
+Marine Pollution, Ô nhiễm biển,đại dương
+Overfishing, Khai thác quá mức,đại dương
+Marine Protected Area, Khu vực bảo vệ biển,đại dương
+Marine Reserve, Khu dự trữ biển,đại dương
+Deep-Sea Exploration, Khám phá đáy biển,đại dương
+Oceanic Research, Nghiên cứu đại dương,đại dương
+Marine Sanctuary, Khu bảo tồn biển,đại dương
+Ocean Conservation, Bảo tồn đại dương,đại dương
+Coral Restoration, Phục hồi rặn san hô,đại dương
+Marine Biodiversity, Đa dạng sinh học biển,đại dương
+Maritime Law, Luật biển,đại dương
+Marine Sanctuary, Khu bảo tồn biển,đại dương
+Marine Reserves, Khu dự trữ biển,đại dương
+Ocean Acidification, Sự axit hóa đại dương,đại dương
+Marine Debris, Rác biển,đại dương
+Nautical Knot, Nút biển,đại dương
+Maritime Trade, Thương mại biển,đại dương
+Coastal Community, Cộng đồng ven biển,đại dương
+Marine Conservation, Bảo tồn biển,đại dương
+Ocean Exploration, Khám phá đại dương,đại dương
+Marine Ecosystem, Hệ sinh thái biển,đại dương
+Seabird, Chim biển,đại dương
+Pinniped, Động vật có vây chân truợc,đại dương
+Maritime Archaeology, Khảo cổ biển,đại dương
+Marine Geology, Địa chất biển,đại dương
+Oceanographic Survey, Cuộc điều tra đại dương học,đại dương
+Marine Biologist, Nhà sinh học biển,đại dương
+Oceanographer, Nhà đại dương học,đại dương
+Marine Ecologist, Nhà sinh thái học biển,đại dương
+Conservationist, Người bảo tồn,đại dương
+Marine Science, Khoa học biển,đại dương
+Marine Environment, Môi trường biển,đại dương
+Marine Conservation, Bảo tồn biển,đại dương
+Oceanography, Đại dương học,đại dương
+Marine Sanctuary, Khu bảo tồn biển,đại dương
+Marine Reserve, Khu dự trữ biển,đại dương
+Dinosaur, Khủng long,tiền sử
+Fossil, Hóa thạch,tiền sử
+Paleontology, Khảo cổ học,tiền sử
+Extinct, Tuyệt chủng,tiền sử
+Prehistoric, Tiền sử,tiền sử
+Herbivore, Sinh vật ăn cỏ,tiền sử
+Carnivore, Sinh vật ăn thịt,tiền sử
+Omnivore, Sinh vật ăn tạp,tiền sử
+Predator, Thú ăn thịt,tiền sử
+Prey, Con mồi,tiền sử
+Theropod, Bộ lạc bò sát,tiền sử
+Sauropod, Bộ lạc tây ác,tiền sử
+Pterosaur, Bộ lạc cánh dơi,tiền sử
+Triceratops, Khủng long ba sừng,tiền sử
+Tyrannosaurus Rex, Khủng long Tyrannosaurus Rex,tiền sử
+Brachiosaurus, Khủng long Brachiosaurus,tiền sử
+Stegosaurus, Khủng long Stegosaurus,tiền sử
+Velociraptor, Khủng long Velociraptor,tiền sử
+Diplodocus, Khủng long Diplodocus,tiền sử
+Allosaurus, Khủng long Allosaurus,tiền sử
+Archaeopteryx, Chim cổ hóa thạch,tiền sử
+Plesiosaur, Cá heo cổ hóa thạch,tiền sử
+Dimetrodon, Khủng long Dimetrodon,tiền sử
+Spinosaurus, Khủng long Spinosaurus,tiền sử
+Ankylosaurus, Khủng long Ankylosaurus,tiền sử
+Pachycephalosaurus, Khủng long Pachycephalosaurus,tiền sử
+Parasaurolophus, Khủng long Parasaurolophus,tiền sử
+Allosaurus, Khủng long Allosaurus,tiền sử
+Iguanodon, Khủng long Iguanodon,tiền sử
+Apatosaurus, Khủng long Apatosaurus,tiền sử
+Compsognathus, Khủng long Compsognathus,tiền sử
+Coelophysis, Khủng long Coelophysis,tiền sử
+Brontosaurus, Khủng long Brontosaurus,tiền sử
+Gallimimus, Khủng long Gallimimus,tiền sử
+Plateosaurus, Khủng long Plateosaurus,tiền sử
+Microraptor, Khủng long Microraptor,tiền sử
+Corythosaurus, Khủng long Corythosaurus,tiền sử
+Archaeoceratops, Khủng long Archaeoceratops,tiền sử
+Deinonychus, Khủng long Deinonychus,tiền sử
+Megalosaurus, Khủng long Megalosaurus,tiền sử
+Archaeornithomimus, Khủng long Archaeornithomimus,tiền sử
+Oviraptor, Khủng long Oviraptor,tiền sử
+Sinornithosaurus, Khủng long Sinornithosaurus,tiền sử
+Troodon, Khủng long Troodon,tiền sử
+Spinosaurus, Khủng long Spinosaurus,tiền sử
+Velociraptor, Khủng long Velociraptor,tiền sử
+Giganotosaurus, Khủng long Giganotosaurus,tiền sử
+Ceratosaurus, Khủng long Ceratosaurus,tiền sử
+Utahraptor, Khủng long Utahraptor,tiền sử
+Theropod, Bộ lạc bò sát,tiền sử
+Sauropod, Bộ lạc tây ác,tiền sử
+Ornithopod, Bộ lạc mỏ vịt,tiền sử
+Dromaeosaurid, Họ Dromaeosaurid,tiền sử
+Ankylosaur, Bộ lạc án ky lô sâu,tiền sử
+Carnosaur, Bộ lạc Carnosaur,tiền sử
+Hadrosaur, Bộ lạc Hà độ sâu,tiền sử
+Ceratopsian, Họ Ceratopsian,tiền sử
+Pterosaur, Bộ lạc cánh dơi,tiền sử
+Raptor, Kẻ săn mồi,tiền sử
+Velociraptor, Khủng long Velociraptor,tiền sử
+Iguanodon, Khủng long Iguanodon,tiền sử
+Stegosaurus, Khủng long Stegosaurus,tiền sử
+Brachiosaurus, Khủng long Brachiosaurus,tiền sử
+Dilophosaurus, Khủng long Dilophosaurus,tiền sử
+Anomalocaris, Sinh vật khủng long Anomalocaris,tiền sử
+Parasaurolophus, Khủng long Parasaurolophus,tiền sử
+Trilobite, Con sò,tiền sử
+Plesiosaur, Cá heo cổ hóa thạch,tiền sử
+Pachycephalosaurus, Khủng long Pachycephalosaurus,tiền sử
+Spinosaurus, Khủng long Spinosaurus,tiền sử
+Apatosaurus, Khủng long Apatosaurus,tiền sử
+Compsognathus, Khủng long Compsognathus,tiền sử
+Coelophysis, Khủng long Coelophysis,tiền sử
+Brontosaurus, Khủng long Brontosaurus,tiền sử
+Gallimimus, Khủng long Gallimimus,tiền sử
+Plateosaurus, Khủng long Plateosaurus,tiền sử
+Microraptor, Khủng long Microraptor,tiền sử
+Corythosaurus, Khủng long Corythosaurus,tiền sử
+Archaeoceratops, Khủng long Archaeoceratops,tiền sử
+Deinonychus, Khủng long Deinonychus,tiền sử
+Megalosaurus, Khủng long Megalosaurus,tiền sử
+Archaeornithomimus, Khủng long Archaeornithomimus,tiền sử
+Oviraptor, Khủng long Oviraptor,tiền sử
+Sinornithosaurus, Khủng long Sinornithosaurus,tiền sử
+Troodon, Khủng long Troodon,tiền sử
+Spinosaurus, Khủng long Spinosaurus,tiền sử
+Velociraptor, Khủng long Velociraptor,tiền sử
+Giganotosaurus, Khủng long Giganotosaurus,tiền sử
+Ceratosaurus, Khủng long Ceratosaurus,tiền sử
+Utahraptor, Khủng long Utahraptor,tiền sử
+Baryonyx, Khủng long Baryonyx,tiền sử
+Archaeopteryx, Chim cổ hóa thạch,tiền sử
+Megalodon, Cá mập Megalodon,tiền sử
+Ichthyosaur, Cá heo cổ hóa thạch,tiền sử
+Stegosaurus, Khủng long Stegosaurus,tiền sử
+Triceratops, Khủng long ba sừng,tiền sử
+Pteranodon, Khủng long Pteranodon,tiền sử
+Quetzalcoatlus, Khủng long Quetzalcoatlus,tiền sử
+Styracosaurus, Khủng long Styracosaurus,tiền sử
+Allosaurus, Khủng long Allosaurus,tiền sử
+Vehicle, Phương tiện,phương tiện giao thông
+Car, Xe hơi,phương tiện giao thông
+Motorcycle, Xe máy,phương tiện giao thông
+Bicycle, Xe đạp,phương tiện giao thông
+Truck, Xe tải,phương tiện giao thông
+Bus, Xe buýt,phương tiện giao thông
+Train, Tàu hỏa,phương tiện giao thông
+Subway, Tàu điện ngầm,phương tiện giao thông
+Tram, Xe điện,phương tiện giao thông
+Aircraft, Máy bay,phương tiện giao thông
+Helicopter, Trực thăng,phương tiện giao thông
+Boat, Thuyền,phương tiện giao thông
+Ship, Tàu biển,phương tiện giao thông
+Yacht, Du thuyền,phương tiện giao thông
+Scooter, Xe tay ga,phương tiện giao thông
+Van, Xe bán tải,phương tiện giao thông
+RV (Recreational Vehicle), Xe du lịch,phương tiện giao thông
+Segway, Xe điện tự cân bằng,phương tiện giao thông
+Hoverboard, Ván trượt điện tự cân bằng,phương tiện giao thông
+Electric Car, Ô tô điện,phương tiện giao thông
+Hybrid Car, Ô tô lai,phương tiện giao thông
+Convertible, Xe mui trần,phương tiện giao thông
+SUV (Sport Utility Vehicle), Xe thể thao đa dụng,phương tiện giao thông
+Minivan, Xe du lịch đa năng,phương tiện giao thông
+Sedan, Xe gầm cao,phương tiện giao thông
+Limousine, Xe hơi hạng sang,phương tiện giao thông
+Pick-up Truck, Xe bán tải,phương tiện giao thông
+Roadster, Xe thể thao hai chỗ,phương tiện giao thông
+Double-decker Bus, Xe buýt hai tầng,phương tiện giao thông
+Cable Car, Xe cáp treo,phương tiện giao thông
+Trolleybus, Xe buýt điện trên đường ray,phương tiện giao thông
+Monorail, Tàu đường sắt đơn,phương tiện giao thông
+High-speed Train, Tàu cao tốc,phương tiện giao thông
+Freight Train, Tàu hàng hóa,phương tiện giao thông
+Cruise Ship, Tàu du lịch biển,phương tiện giao thông
+Cargo Ship, Tàu vận tải hàng hóa,phương tiện giao thông
+Rowboat, Thuyền chèo,phương tiện giao thông
+Canoe, Thuyền bè,phương tiện giao thông
+Sailboat, Thuyền buồm,phương tiện giao thông
+Submarine, Tàu ngầm,phương tiện giao thông
+Fighter Jet, Máy bay tiêm kích,phương tiện giao thông
+Passenger Plane, Máy bay hành khách,phương tiện giao thông
+Cargo Plane, Máy bay vận tải hàng hóa,phương tiện giao thông
+Airship, Tàu không khí,phương tiện giao thông
+Speedboat, Thuyền tốc độ,phương tiện giao thông
+Fishing Boat, Thuyền đánh cá,phương tiện giao thông
+Jet Ski, Máy tạo sóng,phương tiện giao thông
+Canopy, Ô nắng,phương tiện giao thông
+Roof Rack, Khung nắng,phương tiện giao thông
+Exhaust Pipe, Ống xả,phương tiện giao thông
+Windshield, Kính chắn gió,phương tiện giao thông
+Dashboard, Bảng điều khiển,phương tiện giao thông
+Headlight, Đèn pha,phương tiện giao thông
+Taillight, Đèn hậu,phương tiện giao thông
+Bumper, Bộ phận bảo vệ trước xe,phương tiện giao thông
+Tire, Lốp xe,phương tiện giao thông
+Wheel, Bánh xe,phương tiện giao thông
+Steering Wheel, Vô lăng,phương tiện giao thông
+Brake, Phanh,phương tiện giao thông
+Accelerator, Bàn đạp ga,phương tiện giao thông
+Clutch, Ly hợp,phương tiện giao thông
+Gearshift, Cần số,phương tiện giao thông
+Key, Chìa khóa,phương tiện giao thông
+Engine, Động cơ,phương tiện giao thông
+Transmission, Hộp số,phương tiện giao thông
+Battery, Ắc quy,phương tiện giao thông
+Exhaust System, Hệ thống xả khí,phương tiện giao thông
+Fuel Tank, Bình nhiên liệu,phương tiện giao thông
+Radiator, Bình nước làm mát,phương tiện giao thông
+Air Conditioning, Điều hòa không khí,phương tiện giao thông
+GPS (Global Positioning System), Hệ thống định vị toàn cầu,phương tiện giao thông
+Radio, Đài phát thanh,phương tiện giao thông
+CD Player, Máy nghe đĩa CD,phương tiện giao thông
+Bluetooth, Kết nối Bluetooth,phương tiện giao thông
+Dashboard Camera, Camera ghi hình trên xe,phương tiện giao thông
+Seat Belt, Dây đeo an toàn,phương tiện giao thông
+Airbag, Gói khí an toàn,phương tiện giao thông
+Car Alarm, Báo động ô tô,phương tiện giao thông
+GPS Navigation, Định hướng GPS,phương tiện giao thông
+Cruise Control, Điều khiển hành trình,phương tiện giao thông
+Hybrid Engine, Động cơ lai,phương tiện giao thông
+Suspension, Hệ thống treo,phương tiện giao thông
+Transmission Fluid, Dầu hộp số,phương tiện giao thông
+Spark Plug, Bóng đèn gắp lửa,phương tiện giao thông
+Oil Filter, Bộ lọc dầu,phương tiện giao thông
+Windshield Wipers, Cần gạt nước kính chắn gió,phương tiện giao thông
+Rearview Mirror, Gương hậu,phương tiện giao thông
+Sunroof, Cửa nóc,phương tiện giao thông
+Horn, Còi xe,phương tiện giao thông
+Ignition, Hệ thống đánh lửa,phương tiện giao thông
+Side Mirror, Gương phụ,phương tiện giao thông
+Gasoline, Xăng,phương tiện giao thông
+Diesel, Dầu diesel,phương tiện giao thông
+Electric Vehicle (EV), Xe điện,phương tiện giao thông
+Hybrid Electric Vehicle (HEV), Xe điện lai,phương tiện giao thông
+Plug-in Hybrid Electric Vehicle (PHEV), Xe điện lai có thể sạc,phương tiện giao thông
+Autonomous Vehicle, Xe tự lái,phương tiện giao thông
+Ride-sharing, Chia sẻ chuyến đi,phương tiện giao thông
+Carpooling, Cùng nhau đi chung,phương tiện giao thông
+Traffic Jam, Kẹt xe,phương tiện giao thông
+Head, Đầu,cơ thể
+Face, Khuôn mặt,cơ thể
+Hair, Tóc,cơ thể
+Eye, Mắt,cơ thể
+Ear, Tai,cơ thể
+Nose, Mũi,cơ thể
+Mouth, Miệng,cơ thể
+Lip, Môi,cơ thể
+Tooth, Răng,cơ thể
+Tongue, Lưỡi,cơ thể
+Neck, Cổ,cơ thể
+Throat, Họng,cơ thể
+Shoulder, Vai,cơ thể
+Arm, Cánh tay,cơ thể
+Elbow, Khuỷu tay,cơ thể
+Hand, Tay,cơ thể
+Finger, Ngón tay,cơ thể
+Thumb, Ngón tay cái,cơ thể
+Chest, Ngực,cơ thể
+Breast, Vùng ngực,cơ thể
+Heart, Trái tim,cơ thể
+Back, Lưng,cơ thể
+Stomach, Dạ dày,cơ thể
+Abdomen, Bụng dưới,cơ thể
+Waist, Eo,cơ thể
+Hip, Hông,cơ thể
+Buttocks, Mông,cơ thể
+Leg, Chân,cơ thể
+Thigh, Đùi,cơ thể
+Knee, Đầu gối,cơ thể
+Calf, Bắp chân dưới,cơ thể
+Ankle, Cổ chân,cơ thể
+Foot, Bàn chân,cơ thể
+Heel, Gót chân,cơ thể
+Sole, Đáy chân,cơ thể
+Toe, Ngón chân,cơ thể
+Skin, Da,cơ thể
+Nerve, Thần kinh,cơ thể
+Bone, Xương,cơ thể
+Muscle, Cơ,cơ thể
+Joint, Khớp xương,cơ thể
+Organ, Cơ quan,cơ thể
+Brain, Não,cơ thể
+Spine, Xương sống,cơ thể
+Rib, Sườn,cơ thể
+Lung, Phổi,cơ thể
+Liver, Gan,cơ thể
+Kidney, Thận,cơ thể
+Bladder, Bàng quang,cơ thể
+Intestine, Ruột,cơ thể
+Pancreas, Tuyến tụy,cơ thể
+Spleen, Lách,cơ thể
+Gallbladder, Túi mật,cơ thể
+Thyroid, Tuyến giáp,cơ thể
+Pituitary Gland, Tuyến yên,cơ thể
+Adrenal Gland, Tuyến thượng thận,cơ thể
+Ovary, Buồng trứng (nữ),cơ thể
+Testicle, Tinh hoàn (nam),cơ thể
+Uterus, Tử cung,cơ thể
+Cervix, Cổ tử cung,cơ thể
+Vagina, Âm đạo,cơ thể
+Penis, Dương vật,cơ thể
+Testis, Tinh hoàn,cơ thể
+Artery, Động mạch,cơ thể
+Vein, Tĩnh mạch,cơ thể
+Blood, Máu,cơ thể
+Skin, Da,cơ thể
+Nails, Móng tay,cơ thể
+Palm, Bàn tay,cơ thể
+Wrist, Cổ tay,cơ thể
+Pulse, Nhịp tim,cơ thể
+Freckle, Tàn nhang,cơ thể
+Birthmark, Vết sẹo,cơ thể
+Scar, Sẹo,cơ thể
+Wrinkle, Nếp nhăn,cơ thể
+Cell, Tế bào,cơ thể
+Tissue, Mô,cơ thể
+Tendon, Gân,cơ thể
+Ligament, Dây chằng,cơ thể
+Cartilage, Sụn,cơ thể
+Epidermis, Biểu bì,cơ thể
+Dermis, Lớp da dưới,cơ thể
+Pore, Lỗ chân lông,cơ thể
+Sweat Gland, Tuyến mồ hôi,cơ thể
+Fat, Mỡ,cơ thể
+Blood Vessel, Mạch máu,cơ thể
+Lymph Node, Bạch huyết,cơ thể
+Hormone, Hormon,cơ thể
+Enzyme, Enzyme,cơ thể
+Digestive System, Hệ tiêu hóa,cơ thể
+Respiratory System, Hệ hô hấp,cơ thể
+Circulatory System, Hệ tuần hoàn,cơ thể
+Nervous System, Hệ thần kinh,cơ thể
+Endocrine System, Hệ nội tiết,cơ thể
+Immune System, Hệ miễn dịch,cơ thể
+Reproductive System, Hệ sinh sản,cơ thể
+Respiratory Tract, Đường hô hấp,cơ thể
+Nervous Tissue, Mô thần kinh,cơ thể
+Glandular Tissue, Mô tuyến,cơ thể
+Skeletal System, Hệ xương,cơ thể
