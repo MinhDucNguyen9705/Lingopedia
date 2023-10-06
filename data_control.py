@@ -20,6 +20,12 @@ async def meaning_get_from_API(word):
     data = await database.json()
     return data
 
+async def word_get_from_API(meaning):
+    url = "http://127.0.0.1:8000"
+    database = await request(f"{url}/find_meaning/{meaning}")
+    data = await database.json()
+    return data
+
 # def API_connect():
 #     url = "http://127.0.0.1:8000"
 #     database = requests.get(f"{url}/all_words/")
@@ -34,11 +40,12 @@ async def meaning_get_from_API(word):
 #     data = json.loads(database.text)
 #     return data
 
-def post_word_to_API(word, meaning):
+async def post_word_to_API(word, meaning):
     url = "http://127.0.0.1:8000"
-    response = requests.post(f"{url}/create_word/", json = [[word,meaning]])
-    return "Them thanh cong"
+    response = await request(f"{url}/find_word/", json = {"word" : {word}, "meaning" : {meaning}})
+    return await meaning_get_from_API(word)
 
+# print(await post_word_to_API("numerator", "tử số"))
 # print(API_connect())
 # print(meaning_get_from_API("Consultant"))
 
@@ -131,6 +138,11 @@ async def answer_2(prefix):
     answer = []
     return ans
 
+def history_write(history, word):
+    history.append(word)
+
+def show_history(history):
+    return history
 # print(csv_read("data.csv"))
 # print(lay_tu())
 

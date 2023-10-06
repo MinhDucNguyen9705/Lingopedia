@@ -80,7 +80,6 @@ async def create_table():
     word_list = lst[:15]
     # print(word_list)
     word_list.sort(key=len,reverse=True)
-
     crossword.add_word(word_list[0],"down",3,3)
     for i in range (1,len(word_list)):
         current = 0
@@ -143,7 +142,7 @@ async def create_table():
         for j in range (0,len(crossword.board[0])):
             lst.append(crossword.board[i][j])
         table.append(lst)
-
+    
     number = 0
     for i in range (0,len(table)):
         table[i][0] = str(number)
