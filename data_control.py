@@ -40,9 +40,9 @@ async def word_get_from_API(meaning):
 #     data = json.loads(database.text)
 #     return data
 
-async def post_word_to_API(word, meaning):
+async def post_word_to_API(word, meaning, topic):
     url = "http://127.0.0.1:8000"
-    response = await request(f"{url}/find_word/", json = {"word" : {word}, "meaning" : {meaning}})
+    response = await request(f"{url}/find_word/", method = "POST", json = {"word" : {word}, "meaning" : {meaning}, "topic" : {topic}})
     return await meaning_get_from_API(word)
 
 # print(await post_word_to_API("numerator", "tử số"))
@@ -50,7 +50,6 @@ async def post_word_to_API(word, meaning):
 # print(meaning_get_from_API("Consultant"))
 
 async def find_word(prefix):
-    # print("Hello")
     database = await API_connect()
     response = []
     prefix = prefix.lower()
@@ -101,7 +100,6 @@ async def find_word(prefix):
         count_list.append(count)
     min_count = min(count_list)
     max_count = max(count_list)
-    # print(min_count, max_count)
     for i in range (max_count, min_count-1,-1):
         for j in range (0,len(count_list)):
             if count_list[j]==i and database[j] not in response:
@@ -143,40 +141,3 @@ def history_write(history, word):
 
 def show_history(history):
     return history
-# print(csv_read("data.csv"))
-# print(lay_tu())
-
-# url = "http://127.0.0.1:8000"
-# tu = input("Tu ban can them ")
-# nghia = input("Nghia cua tu do ")
-# loai = input("Loai tu cua tu da them ")
-# add = requests.post(f"{url}/lingopedia/",json = {"tu": tu, "nghia":nghia, "loai_tu":loai})
-# res = requests.get(f"{url}/lingopedia/{tu}")
-# data = json.loads(res.text)
-
-# them_tu_khoa(data["tu"],data["nghia"],data["loai_tu"])
-
-# Sử dụng hàm này để tra từ theo nhiều kiểu
-
-
-# tu_khoa = input("Nhập từ khóa cần tra: ")
-# tuy_chon_tra = input("Chọn kiểu tra (tu/nghia/loai/tat_ca): ")
-# ket_qua_tra = tra_tu_khoa(tu_khoa, tuy_chon_tra)
-
-# cursor.execute("SELECT * FROM tu_vung")
-# conn.commit()
-# read_all = cursor.fetchall()
-# for tu in read_all:
-#     print(tu)
-
-# if ket_qua_tra:
-#     for tu, nghia in ket_qua_tra:
-#         print(f'Từ: {tu}, Nghĩa: {nghia}')
-# else:
-#     print("Không tìm thấy từ nào phù hợp.")
-
-# print(tra_tu_khoa("A general practitioner (GP)","tu"))
-
-# prefix = input("Input a prefix ")
-# print(answer_1(prefix))
-# print(answer_2(prefix))

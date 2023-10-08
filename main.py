@@ -8,7 +8,9 @@ count = 0
 satisfaction = True
 no_count = 0
 word_asked = False
+meaning_asked = False
 tu = ""
+nghia = ""
 res = ""
 finding = ""
 ans = ""
@@ -16,7 +18,7 @@ answer_map = {"A": "", "B":"","C": "", "D":""}
 
 history = []
 async def output(message):
-    global status, count, satisfaction, no_count, word_asked, tu, res, finding, history, ans, answer_map
+    global status, count, satisfaction, no_count, word_asked, tu, res, finding, history, ans, answer_map, meaning_asked, nghia
     accept = ["ok","có","được","đồng ý","yes"]
     deny = ["ko","không","no","từ chối"]
     look_up_cases = ["tim tu", "tìm từ", "tìm kiếm", "tìm từ","1"]
@@ -166,15 +168,20 @@ async def output(message):
             status = "option"
             return "Vậy thì hãy nhập lại lệnh để tiếp tục (1-5)"
     elif status == "add word":
-        if word_asked == False:
+        if word_asked == False and meaning_asked == False:
             tu = ""
             tu = message
-            word_asked=True
+            word_asked = True
             return "Mời bạn nhập nghĩa"
+        elif word_asked == True and meaning_asked == False:
+            meaning_asked = True
+            nghia = message
+            return "Mời bạn nhập chủ đề của từ"
         else:
-            word_asked=False
+            word_asked = False
+            meaning_asked = False
             status = "option"
-            return await post_word_to_API(tu, message)
+            return await post_word_to_API(tu, nghia, message)
     # elif status == "crossword":
     #     if count<len(res):
     #         if crossword.guess(message)!=False:
