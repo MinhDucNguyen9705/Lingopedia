@@ -1,46 +1,43 @@
 # Chị nguyệt làm chỗ này
-
+from data_control import answer_1, answer_2, word_get_from_API
 #status 1: tính năng chào hỏi
-def greet_user():
-    return "Chào mừng bạn thân mến đến với Chatbot Từ điển Lingo Dictionary!"
+async def greet_user(name):
+    response = []
+    response.append(f"Xin chào {name}. Mời bạn lựa chọn một trong những chức năng dưới đây:")
+    response.append("1. Tìm nghĩa của từ cho trước")
+    response.append("2. Chơi trò chơi để học từ mới")
+    response.append("3. Đóng góp thêm vào từ điển hiện tại")
+    response.append("4. Tìm từ qua nghĩa của từ")
+    response.append("5. Xem lịch sử tìm kiếm")
+    return response
 
-#status 2: option
-def option():
-    return "Bạn thân mến muốn TRA TỪ hay CHƠI CROSSWORD?"
-    # Lựa chọn tính năng thành công
-    return "Bạn thân mến đã lựa chọn tính tăng {user option} thành công!"
+#status 2: tính năng tra từ
+#2.1 Tra lần đầu tiên
+async def lookup_word_1(keyword):
+    word_list = await answer_1(keyword)
+    answer = ["Những từ bạn cần tìm như sau: \n"]
+    for word in word_list:
+        answer.append("{0} : {1}\n".format(word[0].replace("%20"," "), word[1]))
+    answer.append("Bạn yêu có hài lòng với kết quả này không?")
+    return answer
 
-#status 3: tính năng tra từ
-def lookup_word(keyword: str):
-    return "Mời bạn thân mến NHẬP TỪ KHOÁ muốn tra cứu: "
-    # Từ khoá có sẵn
-        return "Kết quả tra cứu : [...] "
-            # Satisfaction Review (Có phần này không í nhỉ)
-                return "Bạn yêu có hài lòng với kết quả này không? "
-                    # Hài lòng
-                    return "Cảm ơn đánh giá của bạn yêu!"
-                    # Không hài lòng
-                    return "Sau đây là kết quả tra cứu khác: [...]"
-    # Từ khoá không có sẵn
-        return "Rất tiếc, từ khoá này hiện chưa có trong từ điển. Lingo Dictionary sẽ cập nhật trong thời gian sớm nhất bạn yêu nhé!"
+#2.2 Tra lần thứ 2 nếu chưa hài lòng
+async def lookup_word_2(keyword):
+    word_list = await answer_2(keyword)
+    answer = ["Sau đây là kết quả tra cứu khác: "]
+    for word in word_list:
+        answer.append("{0} : {1}\n".format(word[0].replace("%20"," "), word[1]))
+    answer.append("Bạn yêu có hài lòng với kết quả này không?")
+    return answer
 
-#status 4: Crossword
-def play_crossword():
-    # Hiện gợi ý 
-    return "Bạn thân mến, dưới đây là GỢI Ý CROSSWORD của bạn: [..]"
-    # Mời user đoán
-    return "Mời bạn yêu đoán CROSSWORD"
-    # Đáp án chính xác nhưng chưa kết thúc
-    return "Đáp án CHÍNH XÁC! Mời bạn yêu đoán ô chữ tiếp theo: "
-    # Đáp án chính xác và kết thúc
-    return "Tuyệt cà là vời, đáp án CHÍNH XÁC! Chúc mừng bạn yêu đã HOÀN THÀNH CROSSWORD"
-    # Đáp án sai
-    return "Rất tiếc bạn yêu à, đáp án CHƯA CHÍNH XÁC! Mời bạn đoán lại nha: "
-
-#status 5: Pending selection
-def pending_selection():
-    return "Bạn đã hoàn thành TRA TỪ/ CHƠI CROSSWORD. Bạn thân mến có muốn TIẾP TỤC không?"
-    # Tiếp tục --> Về status 2
-    # Không tiếp tục
-    return "Cảm ơn bạn thân mến đã sử dụng Lingo Dictionary. Xin chào và hẹn gặp lại nha!"
-# import main
+#status 3: tìm từ thông qua nghĩa của từ
+async def find_by_meaning(meaning):
+    if len(await word_get_from_API(meaning))>=5:
+        response =  [f"{_[0]} : {_[1]}" for _ in (await word_get_from_API(meaning))[0:5]]
+        return response
+    elif len(await word_get_from_API(meaning))<5:
+        response =  [f"{_[0]} : {_[1]}" for _ in (await word_get_from_API(meaning))[0:]]
+        return response
+    elif len(await word_get_from_API(meaning))==0:
+        return "Từ này hiện chưa có trong từ điển"
+    

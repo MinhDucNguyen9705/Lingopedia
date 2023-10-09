@@ -22,27 +22,19 @@ def create_word(word, definition, topic):
     """)
     connect.commit()
 
-# def find_word(word):
-#     cursor.execute(f"SELECT * FROM tu_dien WHERE tu == {word}")
-#     result = cursor.fetchall()
-#     # print(result)
-#     return result
-
 def find_word(word):
     cursor.execute(f"""
         SELECT * FROM tu_dien WHERE tu = '{word}'
     """)
     result = cursor.fetchall()
-    # print(result)
     return [result[0][2], result[0][3]]
-# print(find_word("Phlebotomist")[0])
+
 
 def find_meaning(meaning):
     cursor.execute(f"""
         SELECT tu FROM tu_dien WHERE nghia LIKE '%{meaning}%'
     """)
     result = cursor.fetchall()
-    # print(result)
     response = []
     for i in range (0,len(result)):
         response.append(result[i][0])
@@ -57,27 +49,6 @@ def find_topic(topic):
     for word in result:
         response.append(word[0])
     return response
-
-# print(find_topic("y học"))
-# import sqlite3
-# import json
-
-# connect = sqlite3.connect('lingopedia.db')
-# cursor = connect.cursor()
-# cursor.execute("""
-#         CREATE TABLE IF NOT EXISTS tu_dien (
-#                id INTEGER PRIMARY KEY AUTOINCREMENT,
-#                tu TEXT NOT NULL,
-#                nghia TEXT NOT NULL
-#                )
-# """)
-# connect.commit()
-
-# def create_word(word,definition):
-#     cursor.execute(f"""
-#         INSERT INTO tu_dien (tu, nghia) VALUES ('{word}','{definition}')
-# """)
-#     connect.commit()
 
 # def find_word(word):
 #     cursor.execute(f"""
@@ -106,6 +77,4 @@ def take_all_word():
         lst.append(list_of_words[i][0])
     return lst
 
-# print(csv_read("word_data.csv"))
-# print(find_word("get"))
-# print(take_all_word())
+# csv_read("word_data.csv")

@@ -46,12 +46,10 @@ async def all_words():
 
 @app.post("/find_word/")
 async def post_word(new_word :dict):
-    try:
-        if new_word["word"] in word_list:
-            return "this word has already been in our dictionary"
-        else:
-            create_word(new_word["tu"],new_word["nghia"],new_word["chu_de"])
-            return "oke"
-    except:
-        return "not oke"
+    # if new_word["tu"] in word_list:
+    #     return "this word has already been in our dictionary"
+    # else:
+    word_list.append(new_word["tu"])
+    create_word(new_word["tu"],new_word["nghia"],new_word["chu_de"])
+    return "oke"
 
