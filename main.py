@@ -24,8 +24,8 @@ played = []
 
 async def output(message):
     global status, count, satisfaction, no_count, word_asked, tu, res, finding, history, ans, answer_map, meaning_asked, nghia, point, questions, topic, played
-    accept = ["ok","có","được","đồng ý","yes"]
-    deny = ["ko","không","no","từ chối"]
+    accept = ["ok","có","được","đồng ý","yes","rồi"]
+    deny = ["ko","không","no","từ chối","chưa"]
     look_up_cases = ["tim tu", "tìm từ", "tìm kiếm","1"]
     game_cases = ["choi", "chơi", "2", "game"]
     add_cases = ["thêm", "3"]
@@ -167,7 +167,7 @@ async def output(message):
             if no_count>0:
                 no_count-=1
             # return chat.back_to_option
-            return "Cảm ơn đánh giá của bạn yêu! Hãy chọn tính năng để tiếp tục (1-5)"
+            return "Cảm ơn đánh giá của bạn yêu! Hãy chọn tính năng để tiếp tục (nhập MENU để xem chi tiết)"
         elif any(case in message.lower() for case in deny):
             if no_count<1:
                 satisfaction = False

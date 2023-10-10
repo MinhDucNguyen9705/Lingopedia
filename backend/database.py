@@ -68,6 +68,17 @@ def csv_read(file):
         connect.commit()
     return "Them thanh cong"
 
+def csv_read_and_add_topic(file):
+    df = pd.read_csv(file)
+    tu_list = list(df["tu"])
+    nghia_list = list(df["nghia"])
+    for i in range (len(tu_list)):
+        cursor.execute("INSERT INTO tu_dien (tu, nghia, chu_de) VALUES (?, ?, ?)",(tu_list[i], nghia_list[i], 'chung'))
+        connect.commit()
+    return "Them thanh cong"
+
+# print(csv_read_and_add_topic("data.csv"))
+
 def take_all_word():
     cursor.execute("SELECT tu FROM tu_dien")
     connect.commit()

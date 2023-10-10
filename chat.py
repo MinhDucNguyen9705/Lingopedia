@@ -9,6 +9,7 @@ async def greet_user(name):
     response.append("3. Đóng góp thêm vào từ điển hiện tại")
     response.append("4. Tìm từ qua nghĩa của từ")
     response.append("5. Xem lịch sử tìm kiếm")
+    response.append("Nhấn QUIT để rời khỏi chương trình")
     return response
 
 #status 2: tính năng tra từ
