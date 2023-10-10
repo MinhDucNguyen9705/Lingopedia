@@ -22,8 +22,15 @@ async def word_get_from_API(meaning):
 
 async def post_word_to_API(word, meaning, topic):
     url = "http://127.0.0.1:8000"
-    response = await request(f"{url}/find_word/", method = "POST", json = {"tu" : {word}, "nghia" : {meaning}, "chu_de" : {topic}})
-    return "Đề xuất thành công. Hãy chờ từ ngữ được kiểm duyệt trước khi được đưa vào từ điển bạn nhé!"
+    info = {'tu': "", 'nghia': "", "chu_de" : ""}
+    info['tu'] = word
+    info['nghia']= meaning
+    info['chu_de'] = topic
+    header = {'Content-Type':'application/json'}
+    response = await request(f"{url}/find_word/", method = "POST", body = json.dumps(info), headers = header)
+    # find = word.replace("%20"," ")
+    return "Đã thêm thành công!"
+
 
 async def find_word(prefix):
     database = await API_connect()

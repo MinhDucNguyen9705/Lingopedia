@@ -31,12 +31,13 @@ async def output(message):
     add_cases = ["thêm", "3"]
     meaning_cases = ["nghĩa", "4"]
     history_cases = ["lịch sử", "5"]
+    stop = ["quit", "thoát", "out", "rời", "back", "dừng", "ngừng"]
     topics = ["y học","công nghệ thông tin","giáo dục","lịch sử","sinh học","vật lý","gia dụng","ẩm thực","công sở","xây dựng","nghệ thuật", "thể thao","màu sắc","động vật","đại dương","tiền sử","phương tiện giao thông","cơ thể"]
     mapping = {"1": "y học", "2":"công nghệ thông tin", "3":"giáo dục","4":"lịch sử","5":"sinh học","6":"vật lý","7":"gia dụng","8":"ẩm thực","9":"công sở","10":"xây dựng","11":"nghệ thuật","12":"thể thao","13":"màu sắc","14":"động vật","15":"đại dương","16":"tiền sử","17":"phương tiện giao thông","18":"cơ thể"}
     menu = ["1. Tìm nghĩa của từ cho trước", "2. Chơi trò chơi để học từ mới", "3. Đóng góp thêm vào từ điển hiện tại", "4. Tìm từ qua nghĩa của từ", "5. Xem lịch sử tìm kiếm"]
     if ("option" in message.lower()) or ("menu" in message.lower()):
         return menu 
-    if message.lower() == "quit":
+    if any(case in message.lower() for case in stop):
         status = "greeting"
         return "Cảm ơn bạn thân mến đã sử dụng Lingo Dictionary. Xin chào và hẹn gặp lại nha!"
     if status=="greeting":
@@ -53,6 +54,7 @@ async def output(message):
             response.append("Mời bạn chọn một trong những chủ đề sau:")
             for i in range (len(topics)):
                 response.append("{0}. {1}".format(i+1, topics[i]))
+            response.append("Nếu muốn kết thúc trò chơi, hãy nhấn EXIT")
             return response
             # try:
             #     status = "crossword"
@@ -117,12 +119,19 @@ async def output(message):
             point = 0
             questions = 0
             played = []
-            return f"Chúc mừng bạn đã hoàn thành trò chơi với {result}/10 câu chính xác. Hãy chọn chức năng để tiếp tục"
+            return f"Chúc mừng bạn đã hoàn thành trò chơi với {result}/10 câu chính xác. Hãy chọn chức năng để tiếp tục (nhập MENU để xem chi tiết)"
     elif status == "guess":
         status = "generate"
+        if message.lower() == "exit":
+            status = "option"
+            result = point
+            point = 0
+            current = questions
+            questions = 0
+            return f"Trò chơi kết thúc. Bạn đạt được {result}/{current} câu trả lời chính xác. Hãy chọn chức năng để tiếp tục (nhập MENU để xem chi tiết)"
         if message not in list(answer_map.keys()) and message.upper() not in list(answer_map.keys()):
             status = "guess"
-            return "Vui lòng chọn đáp án hợp lệ"
+            return "Vui lòng chọn đáp án hợp lệ (A-D)"
         else:
             if verify(answer_map[message.upper()], ans):
                 point+=1
@@ -137,8 +146,8 @@ async def output(message):
         history_write(history, message)
         try:
             return await find_by_meaning(message)
-        except OSError:
-            return "Lỗi nhập từ hoặc từ này chưa có trong từ điển. Hãy chọn lại lệnh để tiếp tục (1-5)"
+        except:
+            return "Lỗi nhập từ hoặc từ này chưa có trong từ điển. Hãy chọn lại lệnh để tiếp tục (nhập MENU để xem chi tiết)"
     elif status == "look up word":
         if message.isalpha() == False and message!="":
             return "Hãy nhập lại chính xác từ cần tìm kiếm"
@@ -177,7 +186,7 @@ async def output(message):
             return "Vui lòng nhập từ bạn muốn thêm"
         elif any(case in message.lower() for case in deny):
             status = "option"
-            return "Vậy thì hãy nhập lại lệnh để tiếp tục (1-5)"
+            return "Vậy thì hãy nhập lại lệnh để tiếp tục (nhập MENU để xem chi tiết)"
         else:
             return "Hãy trả lời có hoặc không để chúng tôi biết nhé!"
     elif status == "add word":
@@ -195,7 +204,7 @@ async def output(message):
             status = "option"
             return await post_word_to_API(tu, nghia, message)
     else:
-        return "Sai cú pháp. Vui lòng nhập lệnh hợp lệ (1-5)"
+        return "Sai cú pháp. Vui lòng nhập lệnh hợp lệ (nhập MENU để xem chi tiết)"
     # elif status == "crossword":
     #     if count<len(res):
     #         if crossword.guess(message)!=False:

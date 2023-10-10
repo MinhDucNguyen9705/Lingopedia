@@ -34,10 +34,12 @@ async def lookup_word_2(keyword):
 async def find_by_meaning(meaning):
     if len(await word_get_from_API(meaning))>=5:
         response =  [f"{_[0]} : {_[1]}" for _ in (await word_get_from_API(meaning))[0:5]]
+        response.append("Nếu từ bạn cần tìm kiếm không có trong này thì hãy cố gắng nhập chi tiết hơn nhé!")
         return response
-    elif len(await word_get_from_API(meaning))<5:
+    elif len(await word_get_from_API(meaning))<5 and len(await word_get_from_API(meaning))>0 :
         response =  [f"{_[0]} : {_[1]}" for _ in (await word_get_from_API(meaning))[0:]]
+        response.append("Nếu từ bạn cần tìm kiếm không có trong này thì hãy cố gắng nhập chi tiết hơn nhé!")
         return response
     elif len(await word_get_from_API(meaning))==0:
-        return "Từ này hiện chưa có trong từ điển"
+        return "Từ này hiện chưa có trong từ điển. Nếu bạn muốn thêm hãy nhấn phím 3"
     
