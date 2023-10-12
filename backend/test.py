@@ -1,5 +1,5 @@
 import requests
-url = "https://lingopedia-chi.vercel.app/"
+url = "https://lingopedia-chi.vercel.app"
 word = input()
 meaning = input()
 topic = input()

@@ -4,28 +4,28 @@ import asyncio
 
 
 async def API_connect():
-    url = "https://lingopedia-chi.vercel.app/"
+    url = "https://lingopedia-chi.vercel.app"
     database = await request(f"{url}/all_words/")
     data = await database.json()
     return data
 
 
 async def meaning_get_from_API(word):
-    url = "https://lingopedia-chi.vercel.app/"
+    url = "https://lingopedia-chi.vercel.app"
     database = await request(f"{url}/find_word/{word}")
     data = await database.json()
     return data
 
 
 async def word_get_from_API(meaning):
-    url = "https://lingopedia-chi.vercel.app/"
+    url = "https://lingopedia-chi.vercel.app"
     database = await request(f"{url}/find_meaning/{meaning}")
     data = await database.json()
     return data
 
 
 async def post_word_to_API(word, meaning, topic):
-    url = "https://lingopedia-chi.vercel.app/"
+    url = "https://lingopedia-chi.vercel.app"
     info = {'tu': "", 'nghia': "", "chu_de" : ""}
     info['tu'] = (word)
     info['nghia']= (meaning)

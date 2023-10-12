@@ -19,7 +19,7 @@ app.add_middleware(
 
 word_list = [word for word in take_all_word()]
 # meaning_list = [find_word(word) for word in take_all_word()]
-
+temp = {}
 
 @app.get("/")
 def read_root():
@@ -28,9 +28,11 @@ def read_root():
 
 @app.get("/find_word/{word}")
 async def get_word(word: str):
-    word = urllib.parse.unquote(word)
-    return [word, find_word(word)[0], find_word(word)[1]]
-
+    if word in word_list:
+        word = urllib.parse.unquote(word)
+        return [word, find_word(word)[0], find_word(word)[1]]
+    else:
+        return [temp[word][0], temp[word][1],temp[word][2]]
 
 @app.get("/find_meaning/{meaning}")
 async def get_word(meaning: str):
@@ -59,6 +61,5 @@ async def post_word(new_word: dict):
     if new_word["tu"] in word_list and new_word['nghia'].lower() == find_word(new_word['tu'])[0].lower():
         return "This word has already been in our dictionary"
     else:
-        word_list.append(new_word["tu"])
-        create_word(new_word["tu"], new_word["nghia"], new_word["chu_de"])
+        temp[new_word['tu']]=  [new_word['tu'], new_word['nghia'], new_word['chu_de']]   
         return "oke"
