@@ -1,5 +1,7 @@
 # Chị nguyệt làm chỗ này
 from data_control import answer_1, answer_2, word_get_from_API
+import urllib.parse
+
 #status 1: tính năng chào hỏi
 async def greet_user(name):
     response = []
@@ -18,7 +20,7 @@ async def lookup_word_1(keyword):
     word_list = await answer_1(keyword)
     answer = ["Những từ bạn cần tìm như sau: \n"]
     for word in word_list:
-        answer.append("{0} : {1}\n".format(word[0].replace("%20"," "), word[1]))
+        answer.append("{0} : {1}\n".format(urllib.parse.unquote(word[0]), word[1]))
     answer.append("Bạn yêu có hài lòng với kết quả này không?")
     return answer
 
@@ -27,7 +29,7 @@ async def lookup_word_2(keyword):
     word_list = await answer_2(keyword)
     answer = ["Sau đây là kết quả tra cứu khác: "]
     for word in word_list:
-        answer.append("{0} : {1}\n".format(word[0].replace("%20"," "), word[1]))
+        answer.append("{0} : {1}\n".format(urllib.parse.unquote(word[0]), word[1]))
     answer.append("Bạn yêu có hài lòng với kết quả này không?")
     return answer
 

@@ -2,6 +2,7 @@ import json
 from xclass_sdk import request
 import random
 import asyncio
+import urllib.parse
 
 async def API_connect():
     url = "http://127.0.0.1:8000"
@@ -11,6 +12,7 @@ async def API_connect():
 
 async def meaning_get_from_API(word):
     url = "http://127.0.0.1:8000"
+    word = urllib.parse.unquote(word)
     database = await request(f"{url}/find_word/{word}")
     data = await database.json()
     return data
@@ -19,6 +21,7 @@ async def meaning_get_from_API(word):
 
 async def topic_get_from_API(word):
     url = "http://127.0.0.1:8000"
+    word = urllib.parse.unquote(word)
     database = await request(f"{url}/find_topic/{word}")
     data = await database.json()
     return data

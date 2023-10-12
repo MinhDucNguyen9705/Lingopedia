@@ -93,7 +93,7 @@ async def output(message):
             else:
                 return show_history(history)
         else:
-            return "Mời bạn nhập lại lệnh"
+            return "Mời bạn nhập lại lệnh. Nhập MENU để biết thêm chi tiết"
     elif status == "topic":
         status = "generate"
         topic = message
@@ -102,17 +102,21 @@ async def output(message):
         if questions<10:
             status = "guess"
             response = []
-            random = await randomize(mapping[str(topic)])
-            while random[1] in played:
+            try:
                 random = await randomize(mapping[str(topic)])
-            played.append(random[1])
-            words = random[0]
-            ans = random[1]
-            response.append("Câu {0}:Từ nào mang ý nghĩa sau: {1}".format(questions+1,(await meaning_get_from_API(ans))[1]))
-            for i in range (len(words)):
-                response.append("{0}. {1}".format(chr(65+i),words[i]))
-                answer_map[chr(65+i)]=words[i]
-            return response
+                while random[1] in played:
+                    random = await randomize(mapping[str(topic)])
+                played.append(random[1])
+                words = random[0]
+                ans = random[1]
+                response.append("Câu {0}:Từ nào mang ý nghĩa sau: {1}".format(questions+1,(await meaning_get_from_API(ans))[1]))
+                for i in range (len(words)):
+                    response.append("{0}. {1}".format(chr(65+i),words[i]))
+                    answer_map[chr(65+i)]=words[i]
+                return response
+            except KeyError:
+                status = "topic"
+                return "Xin vui lòng chọn chủ đề chính xác (1-18)"
         else:
             status = "option"
             result = point

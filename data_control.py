@@ -1,6 +1,7 @@
 import json
 from xclass_sdk import request
 import asyncio
+import urllib.parse
 
 async def API_connect():
     url = "http://127.0.0.1:8000"
@@ -10,12 +11,14 @@ async def API_connect():
 
 async def meaning_get_from_API(word):
     url = "http://127.0.0.1:8000"
+    word = urllib.parse.unquote(word)
     database = await request(f"{url}/find_word/{word}")
     data = await database.json()
     return data
 
 async def word_get_from_API(meaning):
     url = "http://127.0.0.1:8000"
+    meaning = urllib.parse.unquote(meaning)
     database = await request(f"{url}/find_meaning/{meaning}")
     data = await database.json()
     return data
@@ -23,12 +26,11 @@ async def word_get_from_API(meaning):
 async def post_word_to_API(word, meaning, topic):
     url = "http://127.0.0.1:8000"
     info = {'tu': "", 'nghia': "", "chu_de" : ""}
-    info['tu'] = word
-    info['nghia']= meaning
-    info['chu_de'] = topic
+    info['tu'] = urllib.parse.unquote(word)
+    info['nghia']= urllib.parse.unquote(meaning)
+    info['chu_de'] = urllib.parse.unquote(topic)
     header = {'Content-Type':'application/json'}
     response = await request(f"{url}/find_word/", method = "POST", body = json.dumps(info), headers = header)
-    # find = word.replace("%20"," ")
     return "Đã thêm thành công!"
 
 
