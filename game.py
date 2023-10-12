@@ -5,13 +5,13 @@ import asyncio
 import urllib.parse
 
 async def API_connect():
-    url = "http://127.0.0.1:8000"
+    url = "https://lingopedia.vercel.app"
     database = await request(f"{url}/all_words/")
     data = await database.json()
     return data
 
 async def meaning_get_from_API(word):
-    url = "http://127.0.0.1:8000"
+    url = "https://lingopedia.vercel.app"
     word = urllib.parse.unquote(word)
     database = await request(f"{url}/find_word/{word}")
     data = await database.json()
@@ -20,7 +20,7 @@ async def meaning_get_from_API(word):
 # print(meaning_get_from_API("Online Course")[1].strip(" "))
 
 async def topic_get_from_API(word):
-    url = "http://127.0.0.1:8000"
+    url = "https://lingopedia.vercel.app"
     word = urllib.parse.unquote(word)
     database = await request(f"{url}/find_topic/{word}")
     data = await database.json()
