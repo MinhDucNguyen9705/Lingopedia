@@ -6,6 +6,7 @@ from data_control import answer_1, answer_2, word_get_from_API
 
 async def greet_user(name):
     response = []
+    name = name.title()
     response.append(
         f"Xin chào {name}. Mời bạn lựa chọn một trong những chức năng dưới đây:")
     response.append("1. Tìm nghĩa của từ cho trước")

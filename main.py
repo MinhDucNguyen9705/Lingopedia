@@ -21,9 +21,9 @@ history = []
 questions = 0
 topic = ""
 played = []
-
+done = False
 async def output(message):
-    global status, count, satisfaction, no_count, word_asked, tu, res, finding, history, ans, answer_map, meaning_asked, nghia, point, questions, topic, played
+    global status, count, satisfaction, no_count, word_asked, tu, res, finding, history, ans, answer_map, meaning_asked, nghia, point, questions, topic, played,done
     accept = ["ok","có","được","đồng ý","yes","rồi"]
     deny = ["ko","không","no","từ chối","chưa"]
     look_up_cases = ["tim tu", "tìm từ", "tìm kiếm","1"]
@@ -35,14 +35,16 @@ async def output(message):
     topics = ["y học","công nghệ thông tin","giáo dục","lịch sử","sinh học","vật lý","gia dụng","ẩm thực","công sở","xây dựng","nghệ thuật", "thể thao","màu sắc","động vật","đại dương","tiền sử","phương tiện giao thông","cơ thể"]
     mapping = {"1": "y học", "2":"công nghệ thông tin", "3":"giáo dục","4":"lịch sử","5":"sinh học","6":"vật lý","7":"gia dụng","8":"ẩm thực","9":"công sở","10":"xây dựng","11":"nghệ thuật","12":"thể thao","13":"màu sắc","14":"động vật","15":"đại dương","16":"tiền sử","17":"phương tiện giao thông","18":"cơ thể"}
     menu = ["1. Tìm nghĩa của từ cho trước", "2. Chơi trò chơi để học từ mới", "3. Đóng góp thêm vào từ điển hiện tại", "4. Tìm từ qua nghĩa của từ", "5. Xem lịch sử tìm kiếm"]
-    if ("option" in message.lower()) or ("menu" in message.lower()):
+    
+    if status!="look up word" and status!="satisfaction_judge" and message.lower() == "menu":
         return menu 
-    if any(case in message.lower() for case in stop):
+    if status!= "look up word" and status!="satisfaction_judge" and any(case in message.lower() for case in stop):
         status = "greeting"
         return "Cảm ơn bạn thân mến đã sử dụng Lingo Dictionary. Xin chào và hẹn gặp lại nha!"
     if status=="greeting":
         status = "option"
-        return await greet_user(message)
+        name = message.title()
+        return await greet_user(name)
     elif status=="option":
         if any(case in message.lower() for case in look_up_cases):
             status = "look up word"
@@ -109,7 +111,7 @@ async def output(message):
                 played.append(random[1])
                 words = random[0]
                 ans = random[1]
-                response.append("Câu {0}:Từ nào mang ý nghĩa sau: {1}".format(questions+1,(await meaning_get_from_API(ans))[1]))
+                response.append("Câu {0}: Từ nào mang ý nghĩa sau: {1}".format(questions+1,(await meaning_get_from_API(ans))[1]))
                 for i in range (len(words)):
                     response.append("{0}. {1}".format(chr(65+i),words[i]))
                     answer_map[chr(65+i)]=words[i]
@@ -159,31 +161,40 @@ async def output(message):
         if satisfaction == True:
             finding = message
             history_write(history, message)
-            return await lookup_word_1(message)
+            answer = await lookup_word_1(finding)
+            done=True
+            return answer
         else:
             satisfaction=True
             answer = await lookup_word_2(finding)
             finding = ""
+            done = True
             return answer
     elif status=="satisfaction_judge":
-        if any(case in message.lower() for case in accept):
-            status = "option"
-            if no_count>0:
-                no_count-=1
-            # return chat.back_to_option
-            return "Cảm ơn đánh giá của bạn yêu! Hãy chọn tính năng để tiếp tục (nhập MENU để xem chi tiết)"
-        elif any(case in message.lower() for case in deny):
-            if no_count<1:
-                satisfaction = False
-                no_count+=1
-                status = "look up word"
-                return "Nhấn ENTER để bắt đầu tìm kiếm tiếp"
+        if done == True:
+            if any(case in message.lower() for case in accept):
+                status = "option"
+                done = False
+                if no_count>0:
+                    no_count-=1
+                # return chat.back_to_option
+                return "Cảm ơn đánh giá của bạn yêu! Hãy chọn tính năng để tiếp tục (nhập MENU để xem chi tiết)"
+            elif any(case in message.lower() for case in deny):
+                if no_count<1:
+                    satisfaction = False
+                    no_count+=1
+                    status = "look up word"
+                    done = False
+                    return "Nhấn ENTER để bắt đầu tìm kiếm tiếp"
+                else:
+                    no_count = 0
+                    done = False
+                    status = "add word pending"
+                    return "Rất tiếc, từ khoá này hiện chưa có trong từ điển. Lingo Dictionary sẽ cập nhật trong thời gian sớm nhất bạn yêu nhé! Bạn có muốn đề xuất từ mới nào ngay tại đây ko?"
             else:
-                no_count = 0
-                status = "add word pending"
-                return "Rất tiếc, từ khoá này hiện chưa có trong từ điển. Lingo Dictionary sẽ cập nhật trong thời gian sớm nhất bạn yêu nhé! Bạn có muốn đề xuất từ mới nào ngay tại đây ko?"
+                return "Hãy trả lời có hoặc không để chúng tôi biết nhé!"
         else:
-            return "Hãy trả lời có hoặc không để chúng tôi biết nhé!"
+            return "Chúng tôi đang tìm kiếm, bạn hãy kiên nhẫn chờ 1 chút nhé!"
     elif status == "add word pending":
         if any(case in message.lower() for case in accept):
             status = "add word"
