@@ -5,14 +5,14 @@ import asyncio
 
 
 async def API_connect():
-    url = "https://lingopedia-chi.vercel.app"
+    url = "https://lingopedia.vercel.app"
     database = await request(f"{url}/all_words/")
     data = await database.json()
     return data
 
 
 async def meaning_get_from_API(word):
-    url = "https://lingopedia-chi.vercel.app"
+    url = "https://lingopedia.vercel.app"
     database = await request(f"{url}/find_word/{word}")
     data = await database.json()
     return data
@@ -21,7 +21,7 @@ async def meaning_get_from_API(word):
 
 
 async def topic_get_from_API(word):
-    url = "https://lingopedia-chi.vercel.app"
+    url = "https://lingopedia.vercel.app"
     database = await request(f"{url}/find_topic/{word}")
     data = await database.json()
     return data
