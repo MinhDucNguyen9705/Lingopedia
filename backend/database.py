@@ -9,9 +9,9 @@ cursor = connect.cursor()
 cursor.execute("""
         CREATE TABLE IF NOT EXISTS tu_dien (
                id INTEGER PRIMARY KEY AUTOINCREMENT,
-               tu TEXT NOT NULL,
-               nghia TEXT NOT NULL,
-               chu_de TEXT NOT NULL
+               tu TEXT,
+               nghia TEXT,
+               chu_de TEXT
                )
 """)
 connect.commit()
@@ -70,6 +70,8 @@ def csv_read(file):
 
 def csv_read_and_add_topic(file):
     df = pd.read_csv(file)
+    # df.dropna(axis=0,inplace=True)
+    print(df.head())
     tu_list = list(df["tu"])
     nghia_list = list(df["nghia"])
     for i in range (len(tu_list)):
@@ -77,8 +79,12 @@ def csv_read_and_add_topic(file):
         connect.commit()
     return "Them thanh cong"
 
+def delete():
+    cursor.execute("DELETE FROM tu_dien WHERE nghia IS NULL")
+    connect.commit
 # print(csv_read_and_add_topic("data.csv"))
-
+# print(csv_read_and_add_topic("tu_dien.csv"))
+delete()
 def take_all_word():
     cursor.execute("SELECT tu FROM tu_dien")
     connect.commit()
